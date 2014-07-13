@@ -62,6 +62,8 @@ public class MainActivity extends Activity {
 //						checkAnswer();
 //				}});
 		
+		showQuestion();	
+		showQuestionNumber();
 		
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
