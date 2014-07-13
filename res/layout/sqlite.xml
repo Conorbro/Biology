@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSQLSurname"
+        android:layout_alignParentTop="true"
+        android:text="Enter Question" />
+
+    <EditText
+        android:id="@+id/etSQLSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="24dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSQLUpdate"
+        android:layout_below="@+id/etSQLSurname"
+        android:layout_marginTop="18dp"
+        android:text="Enter Answer" />
+
+    <Button
+        android:id="@+id/bSQLUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="Update SQL Database" />
+
+    <EditText
+        android:id="@+id/etSQLName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSQLUpdate"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/bSQLopenView"
+        android:text="Enter Row ID" />
+
+    <EditText
+        android:id="@+id/etIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bSQLopenView"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/bgetInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etIndex"
+        android:layout_below="@+id/etIndex"
+        android:text="Get Information" />
+
+    <Button
+        android:id="@+id/bSQLdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bgetInfo"
+        android:layout_alignRight="@+id/bgetInfo"
+        android:layout_below="@+id/bgetInfo"
+        android:text="Delete Entry" />
+
+    <Button
+        android:id="@+id/bSQLopenView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/bSQLUpdate"
+        android:text="View" />
+    
+</RelativeLayout>
