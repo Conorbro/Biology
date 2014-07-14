@@ -1,5 +1,8 @@
 package com.example.leavingcertbiologyquiz;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 import android.app.Activity;
@@ -18,14 +21,11 @@ public class MainActivity extends Activity {
 	private int currentQuestion; //Keeps track of question in index
 
 	
-//	private Button answerButton; //Check Answer Button
 	private Button questionButton; //Next Question Button
 	private TextView questionView; //Show Question Text
 	private TextView answerView; //Show Answer Text
-//	private EditText answerText; //Where user enters text for answer
 	private TextView questionNumberView; //Displays Question number
 	
-	private RadioButton a, b ,c, d ;
 	private Button test;
 	private Button test2;
 	
@@ -39,28 +39,16 @@ public class MainActivity extends Activity {
 	}
 	public void init()
 	{
-		
+			
 		currentQuestion = 0;
-	//	answerButton = (Button)findViewById(R.id.AnswerButton);
 		questionButton = (Button)findViewById(R.id.button1);
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
-	//	answerText = (EditText) findViewById(R.id.AnswerTextView);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
-		
-		a = (RadioButton)findViewById(R.id.radioButton1);
-		b = (RadioButton)findViewById(R.id.radioButton2);
-		c = (RadioButton)findViewById(R.id.radioButton3);
-		d = (RadioButton)findViewById(R.id.radioButton4);
 
 		test = (Button)findViewById(R.id.button2);
 		test2 = (Button)findViewById(R.id.button3);
 		
-//		answerButton.setOnClickListener(new OnClickListener(){ //Check if answer is correct
-//			
-//				public void onClick(View v){
-//						checkAnswer();
-//				}});
 		
 		showQuestion();	
 		showQuestionNumber();
@@ -103,6 +91,17 @@ public class MainActivity extends Activity {
 	
 	public void showQuestion()
 	{
+		
+		
+	
+		
+		List<Button> buttons = new ArrayList<Button>();
+		
+		buttons.add((Button)findViewById(R.id.radioButton1));
+	    buttons.add((Button)findViewById(R.id.radioButton2));
+	    buttons.add((Button)findViewById(R.id.radioButton3));
+	    buttons.add((Button)findViewById(R.id.radioButton4));
+		
 		Random rand = new Random();
 		int x = rand.nextInt(3) + 1;
 		currentQuestion++;
@@ -114,20 +113,25 @@ public class MainActivity extends Activity {
 		String answer2 = Dbb.getAnswer2(x);
 		String answer3 = Dbb.getAnswer3(x);
 
+		List<String> objects = new ArrayList<String>();
+		objects.add(returnedAnswer);
+		objects.add(answer1);
+		objects.add(answer2);
+		objects.add(answer3);
+		
+		Collections.shuffle(objects);
+		
 		Dbb.close();
-//		if(currentQuestion == questions.length)
-//				currentQuestion = 0;
 		
 		questionView.setText(returnedQuestion);
 		answerView.setText("");
-		a.setText(returnedAnswer);
-		b.setText(answer1);
-		c.setText(answer2);
-		d.setText(answer3);
-
-//		answerText.setText("");		
+	
 		
 		checkAnswer();
+		
+		for (int i = 0; i < objects.size(); i++) {
+		     buttons.get(i).setText(objects.get(i).toString());
+		   }
 		
 	}
 	
@@ -139,12 +143,6 @@ public class MainActivity extends Activity {
 	
 	public void checkAnswer()
 	{
-		
-//		String answer =answerText.getText().toString();
-//		if(isCorrect(answer))
-//			answerView.setText("You're Right!");
-//		else
-//			answerView.setText("You're Wrong! Answer is: " + returnedAnswer);
 		
 	}
 	
