@@ -12,9 +12,10 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -25,7 +26,7 @@ public class MainActivity extends Activity {
 	private TextView questionView; //Show Question Text
 	private TextView answerView; //Show Answer Text
 	private TextView questionNumberView; //Displays Question number
-	
+	private RadioButton answer;
 	private Button test;
 	private Button test2;
 	
@@ -39,7 +40,6 @@ public class MainActivity extends Activity {
 	}
 	public void init()
 	{
-			
 		currentQuestion = 0;
 		questionButton = (Button)findViewById(R.id.button1);
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 		test2 = (Button)findViewById(R.id.button3);
 		
 		
-		showQuestion();	
+		questionView();	
 		showQuestionNumber();
 		
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
@@ -91,9 +91,42 @@ public class MainActivity extends Activity {
 	
 	public void showQuestion()
 	{
-		
+			
+	
+	RadioGroup group=(RadioGroup)findViewById(R.id.radioGroup1);
+	answer=(RadioButton)findViewById(group.getCheckedRadioButtonId());
+
 		
 	
+		if(answer.getText().toString()==returnedAnswer){
+			
+			answerView.setText("The last question was answered Correctly :)");
+			
+		}
+		
+		else{
+			
+			answerView.setText("The last question was answered incorrectly :(");
+			
+		}
+	
+//		Toast.makeText(getApplicationContext(), group.getCheckedRadioButtonId(),
+//				Toast.LENGTH_LONG).show();
+		
+//	answerView.setText(group.getCheckedRadioButtonId());
+	if(group.getCheckedRadioButtonId() == -1){
+		
+		Toast.makeText(getApplicationContext(), "You didn't select an answer ya bleedin muppawn!",
+		Toast.LENGTH_LONG).show();
+	}
+	
+	else{
+		questionView();
+		}
+	}
+	
+	
+	public void questionView(){
 		
 		List<Button> buttons = new ArrayList<Button>();
 		
@@ -121,30 +154,24 @@ public class MainActivity extends Activity {
 		
 		Collections.shuffle(objects);
 		
-		Dbb.close();
+        RadioButton rbu1 =(RadioButton)findViewById(R.id.radioButton4);
+        rbu1.setChecked(true);
 		
 		questionView.setText(returnedQuestion);
-		answerView.setText("");
-	
-		
-		checkAnswer();
-		
+
+
 		for (int i = 0; i < objects.size(); i++) {
 		     buttons.get(i).setText(objects.get(i).toString());
 		   }
 		
+		Dbb.close();
+
 	}
 	
-	public boolean isCorrect(String answer)
-	{
-		return(answer.equalsIgnoreCase(returnedAnswer));
-	}
+
 	
 	
-	public void checkAnswer()
-	{
-		
-	}
+	
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
