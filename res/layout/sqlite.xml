@@ -20,7 +20,7 @@
         android:id="@+id/etSQLSurname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignLeft="@+id/tvscore"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="24dp"
         android:ems="10" >
@@ -29,7 +29,7 @@
     </EditText>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvscore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/bSQLUpdate"
@@ -41,7 +41,7 @@
         android:id="@+id/bSQLUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/tvscore"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="63dp"
         android:text="Update SQL Database" />
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/bSQLUpdate"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/tvscore"
         android:layout_marginTop="18dp"
         android:ems="10" />
 

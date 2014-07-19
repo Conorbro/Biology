@@ -30,6 +30,8 @@ public class MainActivity extends Activity {
 	private Button test;
 	private Button test2;
 	
+	public int questionNum;
+	public int score;
 	public String returnedAnswer;
 	
 	@Override
@@ -40,6 +42,8 @@ public class MainActivity extends Activity {
 	}
 	public void init()
 	{
+		score = 0;
+		questionNum = 0;
 		currentQuestion = 0;
 		questionButton = (Button)findViewById(R.id.button1);
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
@@ -89,7 +93,7 @@ public class MainActivity extends Activity {
 		questionNumberView.setText("Question " +String.valueOf(currentQuestion));
 	}
 	
-	public void showQuestion()
+	public void showQuestion() //Checks answer of previously answered question
 	{
 			
 	
@@ -100,6 +104,7 @@ public class MainActivity extends Activity {
 	
 		if(answer.getText().toString()==returnedAnswer){
 			
+			score++;
 			answerView.setText("The last question was answered Correctly :)");
 			
 		}
@@ -110,10 +115,7 @@ public class MainActivity extends Activity {
 			
 		}
 	
-//		Toast.makeText(getApplicationContext(), group.getCheckedRadioButtonId(),
-//				Toast.LENGTH_LONG).show();
-		
-//	answerView.setText(group.getCheckedRadioButtonId());
+
 	if(group.getCheckedRadioButtonId() == -1){
 		
 		Toast.makeText(getApplicationContext(), "You didn't select an answer ya bleedin muppawn!",
@@ -126,7 +128,7 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	public void questionView(){
+	public void questionView(){ //Loads up next question
 		
 		List<Button> buttons = new ArrayList<Button>();
 		
@@ -137,6 +139,15 @@ public class MainActivity extends Activity {
 		
 		Random rand = new Random();
 		int x = rand.nextInt(3) + 1;
+		questionNum++;
+		
+		if(questionNum>5){		//When questions answered, show results
+						
+			questionNum = 0;
+			Intent i = new Intent("com.example.leavingcertbiologyquiz.Results");
+			startActivity(i);
+		}
+		
 		currentQuestion++;
 		Database Dbb = new Database(this);
 		Dbb.open();
@@ -167,12 +178,7 @@ public class MainActivity extends Activity {
 		Dbb.close();
 
 	}
-	
-
-	
-	
-	
-	
+		
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

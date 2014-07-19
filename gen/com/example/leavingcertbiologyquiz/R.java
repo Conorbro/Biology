@@ -39,7 +39,7 @@ public final class R {
         public static final int editText1=0x7f080012;
         public static final int etIndex=0x7f080014;
         public static final int etSQLName=0x7f080010;
-        public static final int etSQLSurname=0x7f08000d;
+        public static final int etSQLSurname=0x7f08000e;
         public static final int radioButton1=0x7f080008;
         public static final int radioButton2=0x7f080009;
         public static final int radioButton3=0x7f08000a;
@@ -49,15 +49,16 @@ public final class R {
         public static final int tableRow2=0x7f080019;
         public static final int tableRow3=0x7f08001a;
         public static final int textView1=0x7f08000b;
-        public static final int textView2=0x7f08000e;
         public static final int textView3=0x7f080011;
         public static final int tvSQLinfo=0x7f080018;
+        public static final int tvscore=0x7f08000d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int main_menu=0x7f030001;
-        public static final int sqlite=0x7f030002;
-        public static final int sqlview=0x7f030003;
+        public static final int results=0x7f030002;
+        public static final int sqlite=0x7f030003;
+        public static final int sqlview=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;
