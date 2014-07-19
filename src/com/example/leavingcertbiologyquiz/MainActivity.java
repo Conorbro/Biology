@@ -130,6 +130,17 @@ public class MainActivity extends Activity {
 	
 	public void questionView(){ //Loads up next question
 		
+		questionNum++;
+		
+		if(questionNum>5){		//When questions answered, show results
+						
+			questionNum = 0;
+			Intent i = new Intent(getApplicationContext(), Results.class);
+			i.putExtra("Score", score);
+			startActivity(i);
+			finish();
+		}
+		
 		List<Button> buttons = new ArrayList<Button>();
 		
 		buttons.add((Button)findViewById(R.id.radioButton1));
@@ -139,14 +150,7 @@ public class MainActivity extends Activity {
 		
 		Random rand = new Random();
 		int x = rand.nextInt(3) + 1;
-		questionNum++;
-		
-		if(questionNum>5){		//When questions answered, show results
-						
-			questionNum = 0;
-			Intent i = new Intent("com.example.leavingcertbiologyquiz.Results");
-			startActivity(i);
-		}
+	
 		
 		currentQuestion++;
 		Database Dbb = new Database(this);
@@ -184,6 +188,15 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	protected void onResume()
+	{
+	   super.onResume();
+
+	   score = 0;
+	   currentQuestion = 0;
+	   
 	}
 
 	
