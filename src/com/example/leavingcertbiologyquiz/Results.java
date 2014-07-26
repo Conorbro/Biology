@@ -31,8 +31,14 @@ public class Results extends Activity{
 		
 		value2 = Integer.toString(value);
 		
-		score_display.setText(value2);
+		if(value<5){
+		score_display.setText(value2 + "/5");
+		}
 		
+		else{
+			
+		score_display.setText(value2 + "/5 " + "Perfect!");	
+		}
 	}
 	
 }

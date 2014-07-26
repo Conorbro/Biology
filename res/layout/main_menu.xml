@@ -1,24 +1,48 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:background="#177246">
 
     <TextView
         android:id="@+id/textView1"
+        android:fontFamily="Calibre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="61dp"
-        android:text="Leaving Cert Biology"
+        android:text="Leaving Cert Biology Quiz!"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/bbegin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="110dp"
-        android:text="Start Quiz" />
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="42dp"
+        android:fontFamily="Helsinki"
+        android:text="Full Quiz"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bsection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Quiz By Section" 
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/bdatabase"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bsection"
+        android:layout_marginTop="28dp"
+        android:text="Database"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

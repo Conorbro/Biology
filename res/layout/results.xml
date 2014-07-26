@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
+    android:background="#177246"
     android:layout_height="fill_parent" >
 
     <TextView
@@ -9,6 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
+        android:textColor="#FFFFFF"
         android:text="Results"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -18,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
         android:layout_marginTop="14dp"
         android:text="TextView" />
 

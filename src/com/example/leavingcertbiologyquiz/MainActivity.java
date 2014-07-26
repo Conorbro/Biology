@@ -29,7 +29,10 @@ public class MainActivity extends Activity {
 	private RadioButton answer;
 	private Button test;
 	private Button test2;
-	
+//	private Button food;
+//	private Button ecology;
+//	
+//	public int max, min, value;
 	public int questionNum;
 	public int score;
 	public String returnedAnswer;
@@ -37,11 +40,30 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		Bundle x = getIntent().getExtras();
+
+//		if(x != null){
+//			
+//			value = x.getInt("Score");
+//			
+//		}
+//		
+//		if(value>0){
+//			
+//			setContentView(R.layout.sections);
+//		
+//		}
+		
+		
 		setContentView(R.layout.activity_main);
+		
 		init();
 	}
 	public void init()
 	{
+//		max = 50;
+//		min = 0;
 		score = 0;
 		questionNum = 0;
 		currentQuestion = 0;
@@ -49,17 +71,17 @@ public class MainActivity extends Activity {
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
-
+//		food = (Button)findViewById(R.id.bfood);
+//		ecology = (Button)findViewById(R.id.becology);
+		
 		test = (Button)findViewById(R.id.button2);
-		test2 = (Button)findViewById(R.id.button3);
+		test2 = (Button)findViewById(R.id.button3);	
 		
 		
-		questionView();	
-		showQuestionNumber();
 		
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
-				public void onClick(View v) {
+			public void onClick(View v) {
 					showQuestion();	
 					showQuestionNumber();
 				}});
@@ -82,15 +104,38 @@ public class MainActivity extends Activity {
 				startActivity(j);
 			
 		}});
-			
+		
+//		ecology.setOnClickListener(new OnClickListener(){ //Rands between ecology questions 
+//			
+//			public void onClick(View v){
+//				max = 30;
+//				min = 20;
+//				setContentView(R.layout.activity_main);
+//				questionView();	
+//				showQuestionNumber();
+//			
+//		}});
+		
+//		food.setOnClickListener(new OnClickListener(){ //Rands between food questions
+//			
+//			public void onClick(View v){
+//				
+//				max = 50;
+//				min = 31;
+//				setContentView(R.layout.activity_main);
+//				questionView();	
+//				showQuestionNumber();
+//			
+//		}});
+		
+		questionView();	
+		showQuestionNumber();
+		
 		}
 	
-	
-	
-
 	public void showQuestionNumber()
 	{
-		questionNumberView.setText("Question " +String.valueOf(currentQuestion));
+		questionNumberView.setText("Question " + String.valueOf(currentQuestion));
 	}
 	
 	public void showQuestion() //Checks answer of previously answered question
@@ -111,7 +156,7 @@ public class MainActivity extends Activity {
 		
 		else{
 			
-			answerView.setText("The last question was answered incorrectly :(");
+			answerView.setText("The last question was answered incorrectly :(" + "\n" + "Correct answer was: " +  returnedAnswer);
 			
 		}
 	
@@ -149,7 +194,8 @@ public class MainActivity extends Activity {
 	    buttons.add((Button)findViewById(R.id.radioButton4));
 		
 		Random rand = new Random();
-		int x = rand.nextInt(3) + 1;
+//		int x = rand.nextInt(max - min) + min;
+		int x = rand.nextInt(45) + 1;
 	
 		
 		currentQuestion++;
@@ -194,8 +240,8 @@ public class MainActivity extends Activity {
 	{
 	   super.onResume();
 
-	   score = 0;
-	   currentQuestion = 0;
+//	   score = 0;
+//	   currentQuestion = 0;
 	   
 	}
 

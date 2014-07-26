@@ -21,44 +21,51 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int ecology=0x7f020000;
+        public static final int food=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
         public static final int AnswerDisplay=0x7f080004;
         public static final int QuestionNumberView=0x7f080002;
         public static final int QuestionTextView=0x7f080000;
-        public static final int action_settings=0x7f08001b;
-        public static final int bSQLUpdate=0x7f08000f;
-        public static final int bSQLdelete=0x7f080016;
-        public static final int bSQLopenView=0x7f080013;
+        public static final int action_settings=0x7f08001f;
+        public static final int bSQLUpdate=0x7f080013;
+        public static final int bSQLdelete=0x7f08001a;
+        public static final int bSQLopenView=0x7f080017;
         public static final int bbegin=0x7f08000c;
-        public static final int bgetInfo=0x7f080015;
+        public static final int bdatabase=0x7f08000e;
+        public static final int becology=0x7f080010;
+        public static final int bfood=0x7f080011;
+        public static final int bgetInfo=0x7f080019;
+        public static final int bsection=0x7f08000d;
         public static final int button1=0x7f080005;
         public static final int button2=0x7f080003;
         public static final int button3=0x7f080001;
-        public static final int editText1=0x7f080012;
-        public static final int etIndex=0x7f080014;
-        public static final int etSQLName=0x7f080010;
-        public static final int etSQLSurname=0x7f08000e;
+        public static final int editText1=0x7f080016;
+        public static final int etIndex=0x7f080018;
+        public static final int etSQLName=0x7f080014;
+        public static final int etSQLSurname=0x7f080012;
         public static final int radioButton1=0x7f080008;
         public static final int radioButton2=0x7f080009;
         public static final int radioButton3=0x7f08000a;
         public static final int radioButton4=0x7f080007;
         public static final int radioGroup1=0x7f080006;
-        public static final int tableRow1=0x7f080017;
-        public static final int tableRow2=0x7f080019;
-        public static final int tableRow3=0x7f08001a;
+        public static final int tableRow1=0x7f08001b;
+        public static final int tableRow2=0x7f08001d;
+        public static final int tableRow3=0x7f08001e;
         public static final int textView1=0x7f08000b;
-        public static final int textView3=0x7f080011;
-        public static final int tvSQLinfo=0x7f080018;
-        public static final int tvscore=0x7f08000d;
+        public static final int textView3=0x7f080015;
+        public static final int tvSQLinfo=0x7f08001c;
+        public static final int tvscore=0x7f08000f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int main_menu=0x7f030001;
         public static final int results=0x7f030002;
-        public static final int sqlite=0x7f030003;
-        public static final int sqlview=0x7f030004;
+        public static final int sections=0x7f030003;
+        public static final int sqlite=0x7f030004;
+        public static final int sqlview=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f070000;

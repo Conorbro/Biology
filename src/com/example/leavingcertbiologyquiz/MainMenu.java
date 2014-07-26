@@ -11,7 +11,9 @@ public class MainMenu extends Activity {
 
 	
 	private Button startQuiz;
-
+	private Button database;
+	private Button sectionQuiz;
+	public int x;
 	
 	protected void onCreate(Bundle savedInstanceState){
 		
@@ -23,6 +25,7 @@ public class MainMenu extends Activity {
 	
 	public void init(){
 		
+		x=0;
 		startQuiz = (Button)findViewById(R.id.bbegin);
 		
 		startQuiz.setOnClickListener(new OnClickListener(){
@@ -36,6 +39,35 @@ public class MainMenu extends Activity {
 	
 		}});
 		
+		database = (Button)findViewById(R.id.bdatabase);
+		
+		database.setOnClickListener(new OnClickListener(){
+			
+			
+			public void onClick(View v){
+			
+				openDatabase();
+				
+		}});
+		
+		sectionQuiz = (Button)findViewById(R.id.bsection);
+		
+		sectionQuiz.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				x=1;
+				Intent i = new Intent(getApplicationContext(), MainActivity.class);
+				i.putExtra("x", x);
+				startActivity(i);
+				finish();
+				
+//				setContentView(R.layout.sections);
+			
+			
+		}});
+		
 	}
 	
 	public void newQuiz(){
@@ -43,6 +75,13 @@ public class MainMenu extends Activity {
 		Intent i = new Intent("android.intent.action.QUIZ");
 		startActivity(i);
 		
+	}
+	
+	public void openDatabase(){
+		
+		Intent i = new Intent("android.intent.action.SQLITE");
+		startActivity(i);
+	
 	}
 	
 }
