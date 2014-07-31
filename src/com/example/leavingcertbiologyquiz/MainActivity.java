@@ -195,7 +195,7 @@ public class MainActivity extends Activity {
 		
 		Random rand = new Random();
 //		int x = rand.nextInt(max - min) + min;
-		int x = rand.nextInt(45) + 1;
+		int x = rand.nextInt(120) + 1;
 	
 		
 		currentQuestion++;

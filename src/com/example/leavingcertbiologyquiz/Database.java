@@ -84,70 +84,71 @@ public class Database {
 	static void addQuestions()
 	{
 		
-
+	//Section (Number of questions)
+		
 	//1. Characteristics of Life/Food (30)
 		
 	createEntry("The 7 ‘characteristics of life’ are…", "Organisation Nutrition Excretion Response Movement Growth Reproduction", "Nutrition Excretion Response Movement Digestion Growth Reproduction", "Organisation Nutrition Excretion Response Movement Growth Sex", "Nutrition Excretion Response Movement Growth Reproduction Immune System");
 
-	createEntry("The function of food is…", "to provide energy and materials for growth and repair of cells", "to provide energy for the repair and growth of cells in the body", "to fuel the body in its day to day needs", "to repair muscle tissue and maintain healthy bones in the body");
+	createEntry("The function of food is…", "To provide energy and materials for the growth and repair of cells", "To stave off hunger", "To wake the body up", "To taste nice");
 
-	createEntry("The 6 elements in food are...", "carbon hydrogen oxygen nitrogen sulphur phosphorus", "carbon hydrogen oxygen nitrogen sulphur magnesium", "carbon hydrogen oxygen nitrogen sulphur calcium", "carbon hydrogen oxygen nitrogen sulphur sodium");
+	createEntry("The 6 elements in food are...", "Carbon hydrogen oxygen nitrogen sulphur phosphorus", "Carbon hydrogen oxygen nitrogen sulphur magnesium", "Carbon hydrogen oxygen nitrogen sulphur calcium", "Carbon hydrogen oxygen nitrogen sulphur sodium");
 
-	createEntry("The 7 biomolecular components of food are….", "carbohydrates proteins lipids vitamins minerals water", "carbohydrates proteins lipids saturates minerals water", "carbohydrates proteins fats vitamins minerals water", "lignin proteins lipids vitamins minerals water" );
+	createEntry("The 7 biomolecular components of food are….", "Carbohydrates proteins lipids vitamins minerals water", "Carbohydrates proteins lipids saturates minerals water", "Carbohydrates proteins fats vitamins minerals water", "Lignin proteins lipids vitamins minerals water" );
 
-	createEntry("Carbohydrates contain….", "carbon hydrogen oxygen", "carbon hydrogen nitrogen", "hydrogen nitrogen sulphur", "carbon nitrogen sulphur");
+	createEntry("Carbohydrates contain….", "Carbon hydrogen oxygen", "Carbon hydrogen nitrogen", "Hydrogen nitrogen sulphur", "Carbon nitrogen sulphur");
 
-	createEntry("Monosaccharides are...", "one sugar unit e.g. glucose", "two sugar units e.g. sucrose", "many sugar units e.g. starch", "zero sugar units");
+	createEntry("Monosaccharides are...", "One sugar unit e.g. glucose", "Two sugar units e.g. sucrose", "Many sugar units e.g. starch", "Zero sugar units");
 
-	createEntry("Disaccharides are…", "two sugar units e.g. sucrose","one sugar unit e.g. glucose","many sugar units e.g. starch","zero sugar units");
+	createEntry("Disaccharides are…", "Two sugar units e.g. sucrose","One sugar unit e.g. glucose","Many sugar units e.g. starch","Zero sugar units");
 
-	createEntry("Polysaccharides are…", "many sugar units e.g. starch","one sugar unit e.g. glucose","two sugar units e.g. starch","zero sugar units");
+	createEntry("Polysaccharides are…", "Many sugar units e.g. starch","One sugar unit e.g. glucose","Two sugar units e.g. starch","Zero sugar units");
 
-	createEntry("Sources of Carbohydrates are….", "meat fish eggs", "fruits", "water", "vitamins");
+	createEntry("Sources of Carbohydrates are….", "Meat fish eggs", "Fruits", "Water", "Vitamins");
 
-	createEntry("The 4 primary elements of proteins are…", "carbon hydrogen oxygen nitrogen", "carbon hydrogen nitrogen", "carbon nitrogen sulphur", "carbon nitrogen sulphur lithium");
+	createEntry("The 4 primary elements of proteins are…", "Carbon hydrogen oxygen nitrogen", "Carbon hydrogen nitrogen sulphur", "Carbon nitrogen sulphur boron", "Carbon nitrogen sulphur lithium");
 
-	createEntry("Sources of Protein are... ",  "meat fish eggs", "fruits", "water", "vitamins minerals");
+	createEntry("Sources of Protein are... ",  "Meat fish eggs", "Fruits", "Water", "Vitamins minerals");
 
-	createEntry("Lipids Contain…", "carbon hydrogen oxygen in the ratio 2H:10", "carbon hydrogen oxygen in the ratio 1H:20", "carbon hydrogen oxygen in the ratio 3H:10", "carbon hydrogen oxygen in the ratio 1H:10"); 
+	createEntry("Lipids Contain…", "Carbon hydrogen oxygen in the ratio 2H:10", "Carbon hydrogen oxygen in the ratio 1H:20", "Carbon hydrogen oxygen in the ratio 3H:10", "Carbon hydrogen oxygen in the ratio 1H:10"); 
 	 
-	createEntry("fats are... ", "solid at room temperature", "liquid at room temperature", "gas at room temperature", "undefined at room temperature");
+	createEntry("Fats are... ", "Solid at room temperature", "Liquid at room temperature", "Gas at room temperature", "Undefined at room temperature");
 
-	createEntry("oils are…", "liquid at room temperature","solid at room temperature", "gas at room temperature", "undefined at room temperature");
+	createEntry("Oils are…", "Liquid at room temperature","Solid at room temperature", "Gas at room temperature", "Undefined at room temperature");
 
-	createEntry("The basic of unit of a lipid is…", "triglyceride", "phospholipid", "fat", "oil");
+	createEntry("The basic of unit of a lipid is…", "Triglyceride", "Phospholipid", "Fat", "Oil");
 
-	createEntry("Sources of lipids",  "vegetables", "fruits", "butter, oil, meat, cheese", "vitamins minerals");
+	createEntry("Sources of lipids",  "Vegetables", "Fruits", "Butter, oil, meat, cheese", "Vitamins minerals");
 
-	createEntry("The structural role of carbohydrates are…", "cellulose in plant cell wall/ chitin in cell wall of fungi", "collagen in skin/myosin in muscle", "phospholipids in cell membranes", "muscle tissue");
+	createEntry("The structural role of carbohydrates are…", "Cellulose in plant cell wall/ chitin in cell wall of fungi", "Collagen in skin/myosin in muscle", "Phospholipids in cell membranes", "Muscle tissue");
 
-	createEntry("The structural role of protein is…", "collagen in skin/myosin in muscle", "cellulose in plant cell wall/ chitin in cell wall of fungi", "phospholipids in cell membranes", "muscle tissue");
+	createEntry("The structural role of protein is…", "Collagen in skin/myosin in muscle", "Cellulose in plant cell wall/ chitin in cell wall of fungi", "Phospholipids in cell membranes", "Muscle tissue");
 
-	createEntry("The structural role of lipids are…", "phospholipids in cell membranes", "cellulose in plant cell wall/ chitin in cell wall of fungi", "collagen in skin/myosin in muscle", "muscle tissue");
+	createEntry("The structural role of lipids are…", "Phospholipids in cell membranes", "Cellulose in plant cell wall/ chitin in cell wall of fungi", "Collagen in skin/myosin in muscle", "Muscle tissue");
 
-	createEntry("The metabolic role of carbohydrates are…", "release of energy (glucose)", "storage of energy (starch in plants, glycogen in animals)", "formation of enzymes and hormones", "release and storage of energy");
+	createEntry("The metabolic role of carbohydrates are…", "Release of energy (glucose)", "Storage of energy (starch in plants, glycogen in animals)", "Formation of enzymes and hormones", "Release and storage of energy");
 
-	createEntry("The metabolic role of proteins are…","storage of energy (starch in plants, glycogen in animals)",  "release of energy (glucose)", "formation of enzymes and hormones", "release and storage of energy");
+	createEntry("The metabolic role of proteins are…","Storage of energy (starch in plants, glycogen in animals)",  "Release of energy (glucose)", "Formation of enzymes and hormones", "Release and storage of energy");
 
-	createEntry("The metabolic role of lipids are…","storage of energy (starch in plants, glycogen in animals)",  "release of energy (glucose)", "formation of enzymes and hormones", "release and storage of energy");
+	createEntry("The metabolic role of lipids are…","Storage of energy (starch in plants, glycogen in animals)",  "Release of energy (glucose)", "Formation of enzymes and hormones", "Release and storage of energy");
 
-	createEntry("The metabolic role of vitamin D is…","absorption of calcium",  "release of energy (glucose)", "formation of enzymes and hormones", "release and storage of energy");
+	createEntry("The metabolic role of vitamin D is…","Absorption of calcium",  "Release of energy (glucose)", "Formation of enzymes and hormones", "Release and storage of energy");
 
-	createEntry("The metabolic role of vitamin C is…","formation of skin and blood vessels",  "release of energy (glucose)", "formation of enzymes and hormones", "release and storage of energy");
+	createEntry("The metabolic role of vitamin C is…","Formation of skin and blood vessels",  "Release of energy (glucose)", "Formation of enzymes and hormones", "Release and storage of energy");
 
-	createEntry("What disease is caused by a Vitamin C deficiency?", "scurvy", "rickets in children", "aids", "the flu");
+	createEntry("What disease is caused by a Vitamin C deficiency?", "Scurvy", "Rickets in children", "Aids", "The flu");
 
-	createEntry("What disease is caused by a Vitamin D deficiency?", "rickets in children", "scurvy", "aids", "the flu");
+	createEntry("What disease is caused by a Vitamin D deficiency?", "Rickets in children", "Scurvy", "Aids", "The flu");
 
-	createEntry("Role of calcium in plants", "formation of middle lamella between plant cell walls", "formation of chlorophyll", "formation of haemoglobin", "formation of leafs and flower");
+	createEntry("Role of calcium in plants", "Formation of middle lamella between plant cell walls", "Formation of chlorophyll", "Formation of haemoglobin", "Formation of leafs and flower");
 
-	createEntry("Role of magnesium in plants", "formation of chlorophyll", "formation of middle lamella between plant cell walls", "formation of haemoglobin", "formation of leafs and flower");
+	createEntry("Role of magnesium in plants", "Formation of chlorophyll", "Formation of middle lamella between plant cell walls", "Formation of haemoglobin", "Formation of leafs and flower");
 
-	createEntry("Role of calcium in animals", "formation of bones and teeth", "formation of skin and hair", "formation of haemoglobin", "formation of claws and nails");
+	createEntry("Role of calcium in animals", "Formation of bones and teeth", "Formation of skin and hair", "Formation of haemoglobin", "Formation of claws and nails");
 
-	createEntry("Role of iron in animals", "formation of haemoglobin", "formation of skin and hair", "formation of bones and teeth", "formation of claws and nails");
+	createEntry("Role of iron in animals", "Formation of haemoglobin", "Formation of skin and hair", "Formation of bones and teeth", "Formation of claws and nails");
 
-	//2.Ecology (20)
+	//2.Ecology (48)
 	
 	createEntry("Ecology is defined as…", "The study of the relationships of living organisms with each other and with their abiotic environment", "The place where an organism lives", "A group of different species sharing the same resources", "The part of the earth where organisms can live");
 
@@ -188,8 +189,6 @@ public class Database {
 	createEntry("The pyramid of numbers is…", "A diagram showing the number of organisms at each trophic level in a food chain", "An illustration of the interconnections between two or more food structures in an ecosystem", "A chain of animals were the previous animal eats the preceding one", "A pathway along which food (energy) is passed from one species to another");
 
 	createEntry("What is the main limitation of the pyramid of numbers?", "It does not take into account the size of the animals or plants", "It does not take into account the number of animals or plants", "It does not take into account the age of the animals or plants", "It does not take into account the sexual orientation of the animals or plants");
-
-	//30
 	
 	createEntry("Biotic Factors are defined as...", "The influences of living organisms on each other", "The influence of the environment on organisms,", "The influence of organisms on the environment", "The influence of the environement on itself");
 	
@@ -212,6 +211,122 @@ public class Database {
 	createEntry("Sulphur Dioxide pollution causes....", "Acid rain", "Smog", "Globar warming", "Smoke Particles");
 	
 	createEntry("Sulphur Dioxide pollution is caused by...", "The burning of fossil fuels, e.g. oil, natural gas, coal", "Littering", "Methane emitted from animal dung", "Overfishing");
+	
+	createEntry("Conservation is defined as...", "A series of activities designed to preserve or protect the enviornment","Any means that prevents pollution of the environment", "The upkeep or organisms and their environment", "The preservation of an organism's environment" );
+	
+	createEntry("Benefits of conservation include...","Maintains our food supply, biodiversity, and possible sources of drugs", "Promotes tourism and recreation", "Prevents extinction of endangered species", "Allows for scientific research to be conducted");
+	
+	createEntry("Problems of waste management include...", "Incinerators burn rubbish and harmful gases may be released", "Seaguls flock around landfill sites", "Landfill sites attract looters", "Hard to maintain");
+	
+	createEntry("Micro-organisms assist in waste management by...", "Decomposing waste in sewage plants (bacteria and fungi)", "Eliminating the foul odor from waste", "Purifying waste for humans to dispose of", "Turning waste into liquid and gas");
+	
+	createEntry("Factors affecting human population growth...", "Disease, food supply, war, contraception, birth rate, death rate, degree of medical care", "Disease, food supply, war, contraception", "Death rate, degree of medical care", "Contraception, birth rate, death rate");	
+	
+	createEntry("Which Animal Kingdom are bacteria a part of?", "Monera", "Fungi", "Protocitsta", "Animal");
+	
+	createEntry("Which Animal Kingdom are mushrooms a part of?", "", "Monera", "Fungi", "Protocitsta");
+
+	createEntry("Which Animal Kingdom are amoebas a part of?", "Protocitsta", "Monera", "Fungi", "Plant");
+
+	createEntry("Which Animal Kingdom are buttercups a part of?", "Plant", "Monera", "Fungi", "Protocitsta");
+
+	createEntry("Which Animal Kingdom are rabbits a part of?", "Animal", "Monera", "Fungi", "Protocitsta");
+
+	createEntry("A qualitative survey...", "Records all species present in an ecosystem", "Mesaures the population size or distribution of a sepceis", "Measures the size only of a species", "Records some species in an ecosystem");
+	
+	createEntry("A quantitative survey...","Mesaures the population size or distribution of a sepceis", "Measures the size only of a species", "Records some species in an ecosystem", "Records all species present in an ecosystem");
+	
+	createEntry("Which of these is not a valid error of a quantitative survey?", "Syntax error", "Human error", "Limitation of sample size", "Not enough quadrats sampled");
+	
+	createEntry("An adaptation is...","A feature of an organism that suits it to its environment", "A decision made by the orgainism to suit its environment", "An environemtal quirk tailored to a specific organism", "None of the aboe");
+	
+	createEntry("Which of the following is a valid example of an adaptation?", "Spider - uses its web to catch prey", "Snail - slimey for enhanced mobility", "Daisy - bright colour to absorb sunlight", "Rabbit - big feet to kick predators");
+	
+	createEntry("In a qualitative study, what is used in the identification of a species?", "A biological key", "Google", "The observer's knowledge", "DNA testing");
+	
+	//The Cell (17)
+	
+	createEntry("An animal cell is made up of...", "Cell membrane, cytoplasm, nucleus", "Cell membrane, nucleus", "Cell wall, cell membrane, nucleus", "Chloroplast, vacuole, cell wall, cell membrane, cytoplasm, nucleus");
+	
+	createEntry("A plant cell is made up of...", "Chloroplast, vacuole, cell wall, cell membrane, cytoplasm, nucleus","Cell membrane, cytoplasm, nucleus", "Cell membrane, nucleus", "Cell wall, cell membrane, nucleus");
+
+	createEntry("The function(s) of the cell wall are...", "To support the cell and prevent bursting", "To store food, H2O, and chemicals for protection", "Aerobic respiration", "Protein synthesis");
+	
+	createEntry("The function(s) of the large vacuole are...", "To store food, H2O, and chemicals for protection","To support the cell and prevent bursting",  "Aerobic respiration", "Protein synthesis");
+
+	createEntry("The function(s) of the chloroplast are...", "Photosynthesis","To support the cell and prevent bursting",  "Aerobic respiration", "Protein synthesis");
+	
+	createEntry("The function(s) of the cell membrane are...", "To regulate what enters and leaves the cell (Selectively permeable)","To support the cell and prevent bursting",  "Aerobic respiration", "Protein synthesis");
+
+	createEntry("The function(s) of the cytoplasm are...", "To suspend the cell's organelles and to act as a medium for chemical reactions to occur","To support the cell and prevent bursting",  "Aerobic respiration", "Protein synthesis");
+
+	createEntry("The function(s) of the ribosome are...", "Protein synthesis","To support the cell and prevent bursting",  "Aerobic respiration", "Photosynthesis");
+
+	createEntry("The function(s) of the mitochondrion are...","Aerobic respiration", "Protein synthesis","To support the cell and prevent bursting",   "Photosynthesis");
+
+	createEntry("The function(s) of the nucleus are...","Hold DNA and to control the cell's activites", "Protein synthesis","To support the cell and prevent bursting",   "Photosynthesis");
+
+	createEntry("Prokaryotic cells...", "Do not have a membrane-bound nucleus and organelles such as mitochondria and choloplasts (Monera kingdom", "Have a nucleus bounded by a membrane and mitochondria and chloroplasts", "None of the above", "Have no nucleus present in the cytoplasm");
+	
+	createEntry("Eukaryotic cells...", "Have a nucleus bounded by a membrane and mitochondria and chloroplasts","Do not have a membrane-bound nucleus and organelles such as mitochondria and choloplasts (Monera kingdom",  "None of the above", "Have no nucleus present in the cytoplasm");
+
+	createEntry("Tissue is defined as...", "A group of cells specialised for a particular function", "A group of different cells working together for a particular function(s)", "Part of an organ worjing together to carry out a particular function(s)","None of the above");
+	
+	createEntry("Organ is defined as...", "A group of different tissues working together for a particular function(s)","A group of cells specialised for a particular function",  "Part of an organ worjing together to carry out a particular function(s)","None of the above");
+
+	createEntry("An organ system is defined as...", "A number of organs working together to carry out particular function(s)","A group of cells specialised for a particular function",  "A group of different tissues working together for a particular function(s)","None of the above");
+
+	createEntry("Tissue culture is...", "The growth of cells in a sterile nutrient medium in the laboratory", "None of the above", "A method to identify different types of tissue", "The growth of cells on a preexisting set of cells");
+	
+	createEntry("Which of the following is tissue culture NOT used for?", "Tanning", "Mirco-propagation of plants", "Transplant surgery, e.g. skin grafting", "Cancer research");
+	
+	//Cell Continuity (15)
+	
+	createEntry("Cell continuity means...", "Existing cells divide and prodcue new cells", "Existing cells sustain themselves", "Existing cells move from place in an organism to another", "Existing cells reproduce with eachother to form new cells");
+	
+	createEntry("A haploid cell has...", "One set of chromosomes (n) e.g. egg cell, sperm", "Two sets of chromosomes (2n), e.g. bone cell, muscle cell", "Three sets of chromosomes (3n)", "Zero sets of chromosomes");
+	
+	createEntry("A diploid cell has...", "Two sets of chromosomes (2n), e.g. bone cell, muscle cell","One set of chromosomes (n) e.g. egg cell, sperm", "Three sets of chromosomes (3n)", "Zero sets of chromosomes");
+
+	createEntry("During the cell cycle, interphase is when...", "DNA uncoils and replicates and the cell increases in size", "The nucleus divides (mitosis) and the cytoplasm divides (cell division)", "DNA coils and the cell decreases in size", "The nucleus and cytoplasm expand");
+	
+	createEntry("During the cell cycle, division is when...", "The nucleus divides (mitosis) and the cytoplasm divides (cell division)","DNA uncoils and replicates and the cell increases in size",  "DNA coils and the cell decreases in size", "The nucleus and cytoplasm expand");
+
+	createEntry("The stages of mitosis are...", "Prophase, Metaphase, Anaphase, Telephase", "Metaphase, Anaphase, Telephase", "Prophase, Metaphase, Anaphase", "Prophase, Metaphase, Anaphase, Telephase, Ketaphase");
+	
+	createEntry("During cell division in animal cells...", "A cleavage furrow pinches the cell in two", "A cell plate and new cell walls divide the cell", "The cell cleanly splits down the middle", "Another cell moves through the middle of the dividing cell to divide it");
+	
+	createEntry("During cell division in plant cells...",  "A cell plate and new cell walls divide the cell","A cleavage furrow pinches the cell in two", "The cell cleanly splits down the middle", "Another cell moves through the middle of the dividing cell to divide it");
+	
+	createEntry("The result(s) of mitosis are...", "2 identical daughter cells + the chromosome number is kept constant", "2 identical daughter cells", "Chromosome number is kept constant","2 genetically different daughter cells");
+	
+	createEntry("The role of mitosis in unicellular organisms is...", "Asexual reproduction", "Growth", "Repair", "Sexual reproduction");
+	
+	createEntry("The role of mitosis in multicellular organisms is...","Growth and replacement of cells" ,"Asexual reproduction", "Restoration", "Sexual reproduction");
+
+	createEntry("The result(s) of meiosis are...", "Chromosome number halved + daughter nuclei genetically different",  "2 identical daughter cells + the chromosome number is kept constant", "2 identical daughter cells", "Chromosome number is kept constant");
+	
+	createEntry("The role(s) of meiosis are...", "Production of haploid gametes for sexual reproduction + genetic variation", "Growth and replacement of cells" ,"Asexual reproduction", "Restoration");
+	
+	createEntry("In humans, meiosis occurs...", "In the testis and ovaries", "The brain", "The heart", "The testis only");
+	
+	createEntry("Which of the following is not a cause of cancer?", "Jogging", "Cigarette smoke", "Asbestos", "Ultra-violet light");
+	
+	//Cell Membranes (7)
+	
+	createEntry("Diffusion is defined as...", "The movement of molecules in a liquid or gas from a region of higher to lower concentration", "The movement of water molecules from a region of higher concentration to a region of lower concentration across a semi permeable membrance", "Shrinkage of plant cells due to loss of water by osmosis","The movement of molecules from an area of low concentration to an are of high concentration");
+
+	createEntry("Osmosis is defined as...","The movement of water molecules from a region of higher concentration of water to a region of lower concentration across a semi permeable membrance", "The movement of molecules in a liquid or gas from a region of higher to lower concentration",  "Shrinkage of plant cells due to loss of water by osmosis","The movement of molecules from an area of low concentration to an are of high concentration");
+
+	createEntry("Turgor is defined as...","A state in which a cell is fully stretched and rigid due to the cytoplasm pushing out agaisnt the restraining cell wall", "The movement of molecules in a liquid or gas from a region of higher to lower concentration",  "Shrinkage of plant cells due to loss of water by osmosis","The movement of molecules from an area of low concentration to an are of high concentration");
+
+	createEntry("Plasmolysis is defined as...","Shrinkage of plant cells due to loss of water by osmosis","The movement of water molecules from a region of higher concentration of water to a region of lower concentration across a semi permeable membrance", "The movement of molecules in a liquid or gas from a region of higher to lower concentration",  "The movement of molecules from an area of low concentration to an are of high concentration");
+
+	createEntry("Which of the following is NOT an example of diffusion?", "Absorption of H2O in the intestine", "Absorption of food in the intestine", "Absorption of minerals by root hairs and root epidermal cells", "O2 and CO2 moving in and out of leaves");
+	
+	createEntry("Which of the following is NOT an example of osmosis?", "Absorption of food in the intestine", "Absorption of H2O in the intestine", "The opening and closing of the stoma", "Re-absorbtion of H2O in the nephron");
+
+	createEntry("How does osmosis help preserve food?", "By using a high concentration of salt or sugar in food, H2O will be drained from any bacterial cells present causing them to die", "", "", "");
 	
 	}
 
