@@ -148,7 +148,7 @@ public class Database {
 
 	createEntry("Role of iron in animals", "Formation of haemoglobin", "Formation of skin and hair", "Formation of bones and teeth", "Formation of claws and nails");
 
-	//2.Ecology (48)
+	//2.Ecology (48) 
 	
 	createEntry("Ecology is defined as…", "The study of the relationships of living organisms with each other and with their abiotic environment", "The place where an organism lives", "A group of different species sharing the same resources", "The part of the earth where organisms can live");
 
@@ -244,7 +244,7 @@ public class Database {
 	
 	createEntry("In a qualitative study, what is used in the identification of a species?", "A biological key", "Google", "The observer's knowledge", "DNA testing");
 	
-	//The Cell (17)
+	//3. The Cell (17) (78)
 	
 	createEntry("An animal cell is made up of...", "Cell membrane, cytoplasm, nucleus", "Cell membrane, nucleus", "Cell wall, cell membrane, nucleus", "Chloroplast, vacuole, cell wall, cell membrane, cytoplasm, nucleus");
 	
@@ -280,7 +280,7 @@ public class Database {
 	
 	createEntry("Which of the following is tissue culture NOT used for?", "Tanning", "Mirco-propagation of plants", "Transplant surgery, e.g. skin grafting", "Cancer research");
 	
-	//Cell Continuity (15)
+	//4. Cell Continuity (15) (22) (95)
 	
 	createEntry("Cell continuity means...", "Existing cells divide and prodcue new cells", "Existing cells sustain themselves", "Existing cells move from place in an organism to another", "Existing cells reproduce with eachother to form new cells");
 	
@@ -312,7 +312,7 @@ public class Database {
 	
 	createEntry("Which of the following is not a cause of cancer?", "Jogging", "Cigarette smoke", "Asbestos", "Ultra-violet light");
 	
-	//Cell Membranes (7)
+	//Cell Membranes (7) (110)
 	
 	createEntry("Diffusion is defined as...", "The movement of molecules in a liquid or gas from a region of higher to lower concentration", "The movement of water molecules from a region of higher concentration to a region of lower concentration across a semi permeable membrance", "Shrinkage of plant cells due to loss of water by osmosis","The movement of molecules from an area of low concentration to an are of high concentration");
 
@@ -327,6 +327,26 @@ public class Database {
 	createEntry("Which of the following is NOT an example of osmosis?", "Absorption of food in the intestine", "Absorption of H2O in the intestine", "The opening and closing of the stoma", "Re-absorbtion of H2O in the nephron");
 
 	createEntry("How does osmosis help preserve food?", "By using a high concentration of salt or sugar in food, H2O will be drained from any bacterial cells present causing them to die", "", "", "");
+	
+	//Enzymes (8) (117)
+	
+	createEntry("Metabolism is defined as...", "All the chemical reactions in living cells or organisms", "The breaking down reactions where energy is released e.g. respiration", "The building up reactions where energy is used, e.g. photosynthesis", "None of the above");
+	
+	createEntry("Catabolism is defined as...", "The breaking down reactions where energy is released e.g. respiration","All the chemical reactions in living cells or organisms",  "The building up reactions where energy is used, e.g. photosynthesis", "None of the above");
+
+	createEntry("Anabolism is defined as...","The building up reactions where energy is used, e.g. photosynthesis", "All the chemical reactions in living cells or organisms", "The breaking down reactions where energy is released e.g. respiration",  "None of the above");
+
+	createEntry("Enzymes are defined as...", "Biological catalyts produced by living cells (on the ribosomes)", "Cells for growing muscle tissue", "A type of lipid used by the body", "The byproducts of digestion");
+	
+	createEntry("What are enzymes made of?", "Protein", "Fats", "Phospholipids", "Carbohydrates");
+	
+	createEntry("What type of enzyme acts on starch?", "Amylase", "Lactase", "Maltase", "Diastase");
+	
+	createEntry("What factors affect enzyme action?", "pH and temperature", "Day of the week", "Humidity", "Gender");
+	
+	createEntry("An enzyme whose structure is permantly damaged and can no longer function is known as...", "A denatured enzyme", "A broken enzyme", "An enzyme", "None of the above");
+	
+	
 	
 	}
 

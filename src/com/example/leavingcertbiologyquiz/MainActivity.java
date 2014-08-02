@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 //	private Button food;
 //	private Button ecology;
 //	
-//	public int max, min, value;
+	public int max, min, value;
 	public int questionNum;
 	public int score;
 	public String returnedAnswer;
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Bundle x = getIntent().getExtras();
+//	Bundle x = getIntent().getExtras();
 
 //		if(x != null){
 //			
@@ -77,7 +77,16 @@ public class MainActivity extends Activity {
 		test = (Button)findViewById(R.id.button2);
 		test2 = (Button)findViewById(R.id.button3);	
 		
+		Intent mIntent = getIntent();
+		max = mIntent.getIntExtra("max", 0);
+		min = mIntent.getIntExtra("min", 0);
 		
+//		if(max==79){			
+//			min = 31;
+//		}
+//		else {	
+//			min = 0;
+//		}
 		
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
@@ -194,10 +203,16 @@ public class MainActivity extends Activity {
 	    buttons.add((Button)findViewById(R.id.radioButton4));
 		
 		Random rand = new Random();
-//		int x = rand.nextInt(max - min) + min;
-		int x = rand.nextInt(120) + 1;
-	
 		
+		int x = 0;
+		
+	if(max!=0){
+		 x = rand.nextInt(max - min) + min;
+	}
+	
+	else {	 x = rand.nextInt(120) + 1;
+	
+	}
 		currentQuestion++;
 		Database Dbb = new Database(this);
 		Dbb.open();

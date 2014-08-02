@@ -58,13 +58,9 @@ public class MainMenu extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				x=1;
-				Intent i = new Intent(getApplicationContext(), MainActivity.class);
-				i.putExtra("x", x);
+				Intent i = new Intent("android.intent.action.SECTIONS");
 				startActivity(i);
-				finish();
-				
-//				setContentView(R.layout.sections);
-			
+							
 			
 		}});
 		

@@ -4,25 +4,54 @@
     android:background="#177246">
 
     <Button
-        android:id="@+id/becology"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:drawableBottom="@drawable/ic_launcher"
-        android:text="Ecology" 
-        android:textColor="#FFFFFF"/>
-
-    <Button
         android:id="@+id/bfood"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="68dp"
         android:drawableBottom="@drawable/ic_launcher"
-        android:text="Food" 
-        android:textColor="#FFFFFF"/>
+        android:text="1. Food"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/becology"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bfood"
+        android:drawableBottom="@drawable/ic_launcher"
+        android:text="2. Ecology"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bcell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/becology"
+        android:drawableBottom="@drawable/ic_launcher"
+        android:text="3. The Cell" 
+        android:textColor= "#FFFFFF"/>
+
+    <Button
+        android:id="@+id/bcellcontinuity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bcell"
+        android:drawableBottom="@drawable/ic_launcher"
+        android:text="4. Cell Continuity"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/benzymes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bcellcontinuity"
+        android:drawableBottom="@drawable/ic_launcher"
+        android:text="5. Enzymes"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
