@@ -30,7 +30,6 @@ public class Sections extends Activity {
 		ecology = (Button)findViewById(R.id.becology);
 		cell = (Button)findViewById(R.id.bcell);
 		cell_continuity = (Button)findViewById(R.id.bcellcontinuity);
-
 		
 		food.setOnClickListener(new OnClickListener() {
 			@Override
@@ -38,42 +37,32 @@ public class Sections extends Activity {
 				// TODO Auto-generated method stub
 				startQuiz(30, 0);
 			}});
-		
-		
-		
+				
 		ecology.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				startQuiz(78, 30);
 			}});
 		
-	
-			
-		
+
 		cell.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				startQuiz(95, 79);
 			}});
-		
-		
+			
 		cell_continuity.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				
 				startQuiz(117,95);
 			}});
 		
-		
 		enzymes.setOnClickListener(new OnClickListener() {
 			@Override
-			public void onClick(View v) {
-				
+			public void onClick(View v) {	
 				startQuiz(123, 117);
 			
 			}});
-		
-		
 		
 	}
 	
@@ -85,6 +74,11 @@ public class Sections extends Activity {
 		startActivity(i);
 		
 		
+	}
+	
+	public void OnBackPressed() {	
+		super.onBackPressed();
+		overridePendingTransition(R.anim.animation, R.anim.animation2);
 	}
 	
 	

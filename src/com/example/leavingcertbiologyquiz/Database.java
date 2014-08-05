@@ -326,9 +326,9 @@ public class Database {
 	
 	createEntry("Which of the following is NOT an example of osmosis?", "Absorption of food in the intestine", "Absorption of H2O in the intestine", "The opening and closing of the stoma", "Re-absorbtion of H2O in the nephron");
 
-	createEntry("How does osmosis help preserve food?", "By using a high concentration of salt or sugar in food, H2O will be drained from any bacterial cells present causing them to die", "", "", "");
+	createEntry("How does osmosis help preserve food?", "By using a high concentration of salt or sugar in food, H2O will be drained from any bacterial cells present causing them to die", "By using a low concentration of salt or sugar in food, H2O will be drained from any bacterial cells present causing them to die", "By using a high concentration of sulphur or magnesium in food, H2O will be drained from any bacterial cells present causing them to die", "None of the above");
 	
-	//Enzymes (8) (117)
+	//Enzymes (20) (117)
 	
 	createEntry("Metabolism is defined as...", "All the chemical reactions in living cells or organisms", "The breaking down reactions where energy is released e.g. respiration", "The building up reactions where energy is used, e.g. photosynthesis", "None of the above");
 	
@@ -345,6 +345,76 @@ public class Database {
 	createEntry("What factors affect enzyme action?", "pH and temperature", "Day of the week", "Humidity", "Gender");
 	
 	createEntry("An enzyme whose structure is permantly damaged and can no longer function is known as...", "A denatured enzyme", "A broken enzyme", "An enzyme", "None of the above");
+	
+	createEntry("Bioprecoessing is defined as...", "The use of living organisms or their enzymes to produce useful substances", "The use of dead organisms to produce useful substances", "The use of denatured enzymes to produce useful substances", "The use of living organisms to produce denatured enzymes");
+	
+	createEntry("Immobilised enzymes are ...", "Fixed in a gel or attached to an inert material so that they are not free in the solution","Not fixed in a gel or attached to an inert material so that they are free in the solution ","Denatured enzymes attached to an inert material so that they are fixed in the solution", "None of the above");
+	
+	createEntry("What is the method to immobilize enzymes?", "Gel beads containing enzymes are prepared using sodium alginate and calcium chloride solutions", "Hollow beads containing enzymes are prepared using sodium chloried solutions", "Empty gel beads are used to capture the enzymes floating free in the solution", "None of the above");
+	
+	createEntry("When using immobilized enzymes...", "The temperature and pH are kept at optimal levels", "The temperature and pH do not affect the enzyme action", "Only the pH is kept at an optimal level", "Only the temperature is kept at an optimal level");
+	
+	createEntry("Imobilised enzymes are usually placed in a...","Bioreactor", "Tube", "Recycable container", "Cardboard box");
+	
+	createEntry("Which of the following is an application of immobilised enzymes?", "Conversion of glucose to fructiose using glucose isomerase", "None of the above", "Electrolysis", "Respiration and Photosynthesis");
+	
+	createEntry("Which of the following is NOT an advantage of immobilized enzymes?", "Enzymes can alter the thermodynamics of a reaction", "Immboilised enzymes are easily recovered", "They can be re-used and are therefor economical", "The product is easily separated and purified");
+	
+	createEntry("What does 'ATP' stand for?", "Adenosine Triphosphate", "Adenosine Teraphosphate", "Alternative Triphospgate", "None of the above");
+	
+	createEntry("What is the role of ATP?", "ATP is the immediate supplier of energy in the cell, e.g. muscle contraction", "To form ADP", "TO break down ADP", "None of the above");
+	
+	createEntry("What is the role of ADP?", "ADP uses energy and combines with phosphate to form ATP", "ADP is the immediate supplier of energy in the cell, e.g. muscle contraction", "To break down ATP", "None of the above");
+	
+	createEntry("What does ADP stand for?", "Adenosine diphosphate", "Adenosine Triphosphate", "None of the above", "Adenosine delphosphate");
+	
+	createEntry("Which of the following is the correct formula for the formation of ATP?", "ADP + P + energy -> ATP", "ADP + P -> ATP", "ADP + D + P -> ATP", "ADP -> ATP");
+	
+	//DNA () (137) (23)
+	
+	createEntry("DNA consists of...", "Two parallel strands of nucleotides coiled in a double helix", "Three parallel strands of nucleotides coiled in a double helix", "Two perpendicular strands of nucleotides coiled in a double helix", "One strand of nucleotides coiled in a double helix");
+	
+	createEntry("A nucleotide in DNA is made up of...", "Posphate (P) + Deoxyribose (S) + Nitrogen base", "Phosphate (P) + Deoxyribose (S)", "Deoxyribose (S) + Nitrogen base", "Phosphate (S) + Nitrogen base");
+	
+	createEntry("In DNA the nucleotide strands are held together by...", "Weak hydrogen bonds", "Strong hydrogen bonds", "Weak protein bonds", "Strong protein bonds");
+	
+	createEntry("In the complimentary bases of DNA adenine is bonded to...","Thymine" , "Guanine", "Cystosine", "Adenine");
+	
+	createEntry("In the complimentary bases of DNA guanine is bonded to..." , "Cystosine","Adenine","Thymine" , "Guanine" );  
+
+	createEntry("In the complimentary bases of DNA cystosine is bonded to..." , "Guanine", "Cystosine","Adenine","Thymine"  );
+
+	createEntry("A gene is defined as...", "A unit of jereditary information located on a chromosome and made of DNA", "A sequence of triplets that codes for the formation of protein", "Three bases in sequence in a DNA strand that codes for particular amino acid", "None of the above");
+	
+	createEntry("Genetic code is defined as...", "A sequence of triplets that codes for the formation of protein", "A unit of jereditary information located on a chromosome and made of DNA", "Three bases in sequence in a DNA strand that codes for particular amino acid", "None of the above");
+	
+	createEntry("A triplet code or codon is defined as...", "Three bases in sequence in a DNA strand that codes for particular amino acid","A sequence of triplets that codes for the formation of protein", "A unit of jereditary information located on a chromosome and made of DNA", "None of the above");
+	
+	createEntry("Coding DNA is defined as...", "DNA in genes that controls protein synthesis", "A sequence of triplets that codes for the formation of protein", "Three bases in sequence in a DNA strand that codes for particular amino acid", "None of the above");
+
+	createEntry("RNA consists of...","A single strand of nucleotides", "A double strand of nucleotides" , "A triple strand of nucleotides", "None of the above");
+	
+	createEntry("What sugar does RNA consist of?", "Ribose", "Glucose", "Fructose", "Galactose");
+	
+	createEntry("What bases does RNA consist of?","Adenine, uracil, guanine, cystosine", "Adenine","Adenine, guanine, cystosine, thymine", "Thymine, uracil, cystosine");
+	
+	createEntry("Which of the following is NOT a difference between DNA and RNA?", "RNA is double-stranded while DNA is single-stranded", "RNA has the sugar ribose and the base uracil", "RNA is single-stranded while DNA is double-stranded", "DNA has deoxyribose and thymine");
+	
+	createEntry("What are the three types of RNA?", "Messenger mRNA, Ribosomal rRNA, Transfer tRNA", "Ribosomal rRNA, Transfer tRNA" , "Messenger mRNA, Ribosomal rRNA",  "Messenger mRNA, Ribosomal rRNA, Transfer tRNA, Synthesis sRNA");
+	
+	createEntry("At what stage of the cell cycle does DNA replication take place?", "Interphase", "Prophase", "Anaphase", "Telephase");
+	
+	createEntry("Which of the following is not a stage in DNA replication?", "All answers are valid stages of DNA replication", "Double helix unwinds and strands separate", "Free nucleotides link up with the matching exposed bases on each strand", "New complementary strands are formed alongside the old strands");
+	
+	createEntry("DNA profiling is defined as...", "The making of a patern of fragments of DNA for comparison", "Categorising nucleotides in a subject's DNA", "A stage of DNA replication", "The conversion of DNA to RNA");
+	
+	createEntry("Genetic screening is...", "The testing for the presence or absence of a particular gene(s)", "The making of a patern of fragments of DNA for comparison", "Manipulation and alteration of genes or genotype", "A stage of DNA replication");
+	
+	createEntry("In DNA profiling, what is used to extract DNA from the cell?", "Restriction enzymes", "Bacteria", "RNA", "Phospholipids");
+	
+	createEntry("In DNA profiling, how are the extraced fragments separated?", "By size", "By colour", "By scent", "None of the above");
+	
+	createEntry("Which of the following is not an application of genetic engineering?", "All given answers are valid", "Production of weed killer resistant crop plants", "Human blood-clotting factor VIII produced in sheep's milk", "Human insulin produced by bacteria");
 	
 	
 	

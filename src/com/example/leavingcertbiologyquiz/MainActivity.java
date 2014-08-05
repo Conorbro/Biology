@@ -28,10 +28,7 @@ public class MainActivity extends Activity {
 	private TextView questionNumberView; //Displays Question number
 	private RadioButton answer;
 	private Button test;
-	private Button test2;
-//	private Button food;
-//	private Button ecology;
-//	
+	private Button test2;	
 	public int max, min, value;
 	public int questionNum;
 	public int score;
@@ -41,19 +38,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-//	Bundle x = getIntent().getExtras();
 
-//		if(x != null){
-//			
-//			value = x.getInt("Score");
-//			
-//		}
-//		
-//		if(value>0){
-//			
-//			setContentView(R.layout.sections);
-//		
-//		}
 		
 		
 		setContentView(R.layout.activity_main);
@@ -62,8 +47,7 @@ public class MainActivity extends Activity {
 	}
 	public void init()
 	{
-//		max = 50;
-//		min = 0;
+
 		score = 0;
 		questionNum = 0;
 		currentQuestion = 0;
@@ -71,22 +55,13 @@ public class MainActivity extends Activity {
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
-//		food = (Button)findViewById(R.id.bfood);
-//		ecology = (Button)findViewById(R.id.becology);
-		
 		test = (Button)findViewById(R.id.button2);
 		test2 = (Button)findViewById(R.id.button3);	
 		
 		Intent mIntent = getIntent();
 		max = mIntent.getIntExtra("max", 0);
 		min = mIntent.getIntExtra("min", 0);
-		
-//		if(max==79){			
-//			min = 31;
-//		}
-//		else {	
-//			min = 0;
-//		}
+
 		
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
@@ -113,29 +88,6 @@ public class MainActivity extends Activity {
 				startActivity(j);
 			
 		}});
-		
-//		ecology.setOnClickListener(new OnClickListener(){ //Rands between ecology questions 
-//			
-//			public void onClick(View v){
-//				max = 30;
-//				min = 20;
-//				setContentView(R.layout.activity_main);
-//				questionView();	
-//				showQuestionNumber();
-//			
-//		}});
-		
-//		food.setOnClickListener(new OnClickListener(){ //Rands between food questions
-//			
-//			public void onClick(View v){
-//				
-//				max = 50;
-//				min = 31;
-//				setContentView(R.layout.activity_main);
-//				questionView();	
-//				showQuestionNumber();
-//			
-//		}});
 		
 		questionView();	
 		showQuestionNumber();
@@ -255,8 +207,6 @@ public class MainActivity extends Activity {
 	{
 	   super.onResume();
 
-//	   score = 0;
-//	   currentQuestion = 0;
 	   
 	}
 

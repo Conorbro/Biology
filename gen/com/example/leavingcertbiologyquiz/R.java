@@ -8,6 +8,10 @@
 package com.example.leavingcertbiologyquiz;
 
 public final class R {
+    public static final class anim {
+        public static final int animation=0x7f040000;
+        public static final int animation2=0x7f040001;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -17,8 +21,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int ecology=0x7f020000;
@@ -26,41 +30,43 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int AnswerDisplay=0x7f080004;
-        public static final int QuestionNumberView=0x7f080002;
-        public static final int QuestionTextView=0x7f080000;
-        public static final int action_settings=0x7f080022;
-        public static final int bSQLUpdate=0x7f080016;
-        public static final int bSQLdelete=0x7f08001d;
-        public static final int bSQLopenView=0x7f08001a;
-        public static final int bbegin=0x7f08000c;
-        public static final int bcell=0x7f080012;
-        public static final int bcellcontinuity=0x7f080013;
-        public static final int bdatabase=0x7f08000e;
-        public static final int becology=0x7f080011;
-        public static final int benzymes=0x7f080014;
-        public static final int bfood=0x7f080010;
-        public static final int bgetInfo=0x7f08001c;
-        public static final int bsection=0x7f08000d;
-        public static final int button1=0x7f080005;
-        public static final int button2=0x7f080003;
-        public static final int button3=0x7f080001;
-        public static final int editText1=0x7f080019;
-        public static final int etIndex=0x7f08001b;
-        public static final int etSQLName=0x7f080017;
-        public static final int etSQLSurname=0x7f080015;
-        public static final int radioButton1=0x7f080008;
-        public static final int radioButton2=0x7f080009;
-        public static final int radioButton3=0x7f08000a;
-        public static final int radioButton4=0x7f080007;
-        public static final int radioGroup1=0x7f080006;
-        public static final int tableRow1=0x7f08001e;
-        public static final int tableRow2=0x7f080020;
-        public static final int tableRow3=0x7f080021;
-        public static final int textView1=0x7f08000b;
-        public static final int textView3=0x7f080018;
-        public static final int tvSQLinfo=0x7f08001f;
-        public static final int tvscore=0x7f08000f;
+        public static final int AnswerDisplay=0x7f090004;
+        public static final int QuestionNumberView=0x7f090002;
+        public static final int QuestionTextView=0x7f090000;
+        public static final int action_settings=0x7f090024;
+        public static final int bSQLUpdate=0x7f090018;
+        public static final int bSQLdelete=0x7f09001f;
+        public static final int bSQLopenView=0x7f09001c;
+        public static final int bbegin=0x7f09000c;
+        public static final int bcell=0x7f090010;
+        public static final int bcellcontinuity=0x7f090012;
+        public static final int bdatabase=0x7f09000e;
+        public static final int bdna=0x7f090015;
+        public static final int becology=0x7f090011;
+        public static final int benzymes=0x7f090013;
+        public static final int bevolution=0x7f090016;
+        public static final int bfood=0x7f090014;
+        public static final int bgetInfo=0x7f09001e;
+        public static final int bsection=0x7f09000d;
+        public static final int button1=0x7f090005;
+        public static final int button2=0x7f090003;
+        public static final int button3=0x7f090001;
+        public static final int editText1=0x7f09001b;
+        public static final int etIndex=0x7f09001d;
+        public static final int etSQLName=0x7f090019;
+        public static final int etSQLSurname=0x7f090017;
+        public static final int radioButton1=0x7f090008;
+        public static final int radioButton2=0x7f090009;
+        public static final int radioButton3=0x7f09000a;
+        public static final int radioButton4=0x7f090007;
+        public static final int radioGroup1=0x7f090006;
+        public static final int tableRow1=0x7f090020;
+        public static final int tableRow2=0x7f090022;
+        public static final int tableRow3=0x7f090023;
+        public static final int textView1=0x7f09000b;
+        public static final int textView3=0x7f09001a;
+        public static final int tvSQLinfo=0x7f090021;
+        public static final int tvscore=0x7f09000f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -71,12 +77,12 @@ public final class R {
         public static final int sqlview=0x7f030005;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060002;
     }
     public static final class style {
         /** 
@@ -100,10 +106,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
