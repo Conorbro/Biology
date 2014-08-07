@@ -7,6 +7,8 @@ import java.util.Random;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -26,14 +28,13 @@ public class MainActivity extends Activity {
 	private TextView questionView; //Show Question Text
 	private TextView answerView; //Show Answer Text
 	private TextView questionNumberView; //Displays Question number
-	private RadioButton answer;
-	private Button test;
-	private Button test2;	
+	private RadioButton answer;	
 	public int max, min, value;
 	public int questionNum;
 	public int score;
 	public String returnedAnswer;
-	
+	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -48,6 +49,7 @@ public class MainActivity extends Activity {
 	public void init()
 	{
 
+		final int soundId = sp.load(this, R.raw.click, 1);
 		score = 0;
 		questionNum = 0;
 		currentQuestion = 0;
@@ -55,8 +57,7 @@ public class MainActivity extends Activity {
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
-		test = (Button)findViewById(R.id.button2);
-		test2 = (Button)findViewById(R.id.button3);	
+		
 		
 		Intent mIntent = getIntent();
 		max = mIntent.getIntExtra("max", 0);
@@ -66,28 +67,11 @@ public class MainActivity extends Activity {
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
 			public void onClick(View v) {
+				 	sp.play(soundId, 1, 1, 0, 0, 1);
 					showQuestion();	
 					showQuestionNumber();
 				}});
 		
-		test.setOnClickListener(new OnClickListener(){ //Debugging
-			
-			
-			public void onClick(View v){
-				Intent i = new Intent("android.intent.action.SQLVIEW");
-				startActivity(i);
-				
-			
-			}});
-		
-		
-		test2.setOnClickListener(new OnClickListener(){ //Debugging
-			
-			public void onClick(View v){
-				Intent j = new Intent("android.intent.action.SQLITE");
-				startActivity(j);
-			
-		}});
 		
 		questionView();	
 		showQuestionNumber();
@@ -107,6 +91,11 @@ public class MainActivity extends Activity {
 	answer=(RadioButton)findViewById(group.getCheckedRadioButtonId());
 
 		
+		if(questionNum==0){
+			
+			answerView.setText(" ");
+			
+		}
 	
 		if(answer.getText().toString()==returnedAnswer){
 			

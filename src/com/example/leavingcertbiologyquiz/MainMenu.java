@@ -1,10 +1,10 @@
 package com.example.leavingcertbiologyquiz;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.os.Build;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -16,7 +16,8 @@ public class MainMenu extends Activity {
 	private Button startQuiz;
 	private Button database;
 	private Button sectionQuiz;
-	
+	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+
 	protected void onCreate(Bundle savedInstanceState){
 		
 		super.onCreate(savedInstanceState);
@@ -26,7 +27,7 @@ public class MainMenu extends Activity {
 	}
 	
 	public void init(){
-		
+		final int soundId = sp.load(this, R.raw.click, 1); 
 		startQuiz = (Button)findViewById(R.id.bbegin);
 		database = (Button)findViewById(R.id.bdatabase);
 		sectionQuiz = (Button)findViewById(R.id.bsection);
@@ -37,7 +38,7 @@ public class MainMenu extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				
+				sp.play(soundId, 1, 1, 0, 0, 1);
 				newQuiz();
 			
 	
@@ -48,7 +49,7 @@ public class MainMenu extends Activity {
 			
 			
 			public void onClick(View v){
-			
+				sp.play(soundId, 1, 1, 0, 0, 1);
 				openDatabase();
 				
 		}});
@@ -58,7 +59,7 @@ public class MainMenu extends Activity {
 
 			@Override
 			public void onClick(View v) {
-			
+				sp.play(soundId, 1, 1, 0, 0, 1);
 				openSections();
 							
 			

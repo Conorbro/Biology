@@ -416,7 +416,29 @@ public class Database {
 	
 	createEntry("Which of the following is not an application of genetic engineering?", "All given answers are valid", "Production of weed killer resistant crop plants", "Human blood-clotting factor VIII produced in sheep's milk", "Human insulin produced by bacteria");
 	
+	createEntry("Which of the following is the correct order of steps taken in the process of genetic engineering?", "Isolation, Cutting, Insertion, Transformation, Expression", " Cutting, Isolation, Insertion, Transformation, Expression", "Isolation, Cutting, Transformation, Insertion, Expression", "Insertion, Expression, Isolation, Cutting, Transformation");
 	
+	createEntry("Which of the following is a cause of genetic variation?", "Sexual reproduction/Mutation", "Contraception", "Respiration", "DNA Profiling");
+	
+	createEntry("A mutation is...", "A change in genetic material", "DNA replication", "A part of DNA profiling", "The breaking down of DNA");
+	
+	createEntry("Which of the following may cause a mutation to occur?", "All answers may cause a mutation to occur", "Cigarette Smoke", "Viruses", "Radiation, e.g. x-rays");
+	
+	createEntry("Evolution is defined as...", "The change in species or organisms over long periods of time", "The controlled alteration of a particular organism's DNA", "The sexual reproduction of organisms and plants", "None of the above");
+	
+	createEntry("What causes evolution to occur?", "Natural selection in response to a change in the environment", "Genetic engineering", "Protein synthesis", "None of the above");
+	
+	createEntry("Name the two scientists who are associated with the theory of of evolution and natural selection", "Charles Darwin and Alfred Russel Walace", "Albert Einstein and Isaac Newton", "Marie Curie and Gregor Mendel", "Max Born and Galileo Galilei");
+	
+	createEntry("In the theory of evolution, it is observed that...", "Species have a high reproductive rate, population numbers remain more or less the same, and there is a high death rate among offspring", "Species have a low reproductive rate, population numbers tend to increase continuously, and there is a low death rate among offspring", "Species have a high reproductive rate, population numbers remain more or less the same, and there is a high death rate among offspring", "None of the above");
+	
+	createEntry("In the thoery of evolution, the struggle for existence is caused by competition for...", "Food, shelter, and a mate", "Food", "Food and shelter", "Shelter and a mate");
+	
+	createEntry("Fill in the blank: ____ occur within a species so that some individuals are better suited to the conditions that others", "Variations", "Deaths", "Reproductions", "Wars");
+	
+	createEntry("The individuals with the more favourable variations....", "Live longer and have more offspring than those less adapted", "Live shorter and have more offspring than those less adapted", "Live longer and have less offspring than those less adapted", "The favourable variations have no effect");
+	
+	createEntry("Which of the following is valid evidence for evolution?", "All answers provide valid evidence for evolution" ,"Comparative anatomy", "Fossils, e.g. the horse", "Comparative embryology");
 	
 	}
 
