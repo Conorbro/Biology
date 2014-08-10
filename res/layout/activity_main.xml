@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="800dp" >
+    android:layout_height="fill_parent" >
 
 	<RelativeLayout
 	    android:layout_width="match_parent"
@@ -14,11 +14,58 @@
 	    android:paddingTop="@dimen/activity_vertical_margin"
 	    tools:context=".MainActivity" >
 
+	    <TextView
+	        android:id="@+id/QuestionTextView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/AnswerDisplay"
+	        android:layout_alignParentTop="true"
+	        android:text="TextView"
+	        android:textColor="#FFFFFF" />
+
+	    <TextView
+	        android:id="@+id/QuestionNumberView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/button1"
+	        android:layout_below="@+id/button1"
+	        android:text="TextView"
+	        android:textColor="#FFFFFF" />
+
+	    <TextView
+	        android:id="@+id/AnswerDisplay"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_below="@+id/QuestionNumberView"
+	        android:layout_marginTop="26dp"
+	        android:text="TextView"
+	        android:textColor="#FFFFFF" />
+
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/radioGroup1"
+	        android:layout_below="@+id/radioGroup1"
+	        android:layout_marginTop="27dp"
+	        android:text="Show Next Question"
+	        android:textColor="#FFFFFF" />
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/AnswerDisplay"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="21dp"
+	        android:src="@drawable/food" />
+
 	    <RadioGroup
 	        android:id="@+id/radioGroup1"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/QuestionTextView"
+	        android:layout_alignParentRight="true"
 	        android:layout_below="@+id/QuestionTextView"
 	        android:layout_weight="0.04"
 	        android:textColor="#FFFFFF" >
@@ -27,6 +74,14 @@
 	            android:id="@+id/radioButton4"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
+	            android:text="RadioButton"
+	            android:textColor="#FFFFFF" />
+
+	        <RadioButton
+	            android:id="@+id/radioButton1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="36dp"
 	            android:text="RadioButton"
 	            android:textColor="#FFFFFF" />
 
@@ -46,54 +101,7 @@
 	            android:text="RadioButton"
 	            android:textColor="#FFFFFF" />
 
-	        <RadioButton
-	            android:id="@+id/radioButton1"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:layout_marginTop="36dp"
-	            android:text="RadioButton"
-	            android:textColor="#FFFFFF" />
-
 	    </RadioGroup>
-
-	    <Button
-	        android:id="@+id/button1"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/radioGroup1"
-	        android:layout_below="@+id/radioGroup1"
-	        android:layout_marginTop="28dp"
-	        android:text="Show Next Question"
-	        android:textColor="#FFFFFF" />
-
-	    <TextView
-	        android:id="@+id/AnswerDisplay"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignParentLeft="true"
-	        android:layout_below="@+id/QuestionNumberView"
-	        android:layout_marginTop="45dp"
-	        android:text="TextView"
-	        android:textColor="#FFFFFF" />
-
-	    <TextView
-	        android:id="@+id/QuestionNumberView"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/button1"
-	        android:layout_below="@+id/button1"
-	        android:layout_marginTop="29dp"
-	        android:text="TextView"
-	        android:textColor="#FFFFFF" />
-
-	    <TextView
-	        android:id="@+id/QuestionTextView"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/AnswerDisplay"
-	        android:layout_alignParentTop="true"
-	        android:text="TextView"
-	        android:textColor="#FFFFFF" />
 
 	</RelativeLayout>
 

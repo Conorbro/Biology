@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Random;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -33,8 +36,16 @@ public class MainActivity extends Activity {
 	public int questionNum;
 	public int score;
 	public String returnedAnswer;
-	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
-
+	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+	public ImageView imageView;
+	public Drawable image;
+	
+	public int images[] = {			
+		R.drawable.ecology,
+		R.drawable.food,
+		R.drawable.ic_launcher
+	};
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,28 +68,34 @@ public class MainActivity extends Activity {
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
+		imageView = (ImageView)findViewById(R.id.imageView1);
 		
-		
+		image = getResources().getDrawable(images[1]);		//Setting the image view
+		imageView.setImageDrawable(image);
+
 		Intent mIntent = getIntent();
 		max = mIntent.getIntExtra("max", 0);
 		min = mIntent.getIntExtra("min", 0);
 
-		
+		answerView.setText(" ");
+
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
 			public void onClick(View v) {
 				 	sp.play(soundId, 1, 1, 0, 0, 1);
 					showQuestion();	
 					showQuestionNumber();
-				}});
-		
+				
+					questionNum++;
+			
+			}});
 		
 		questionView();	
-		showQuestionNumber();
-		
+		showQuestionNumber();	
+
 		}
 	
-	public void showQuestionNumber()
+	public void showQuestionNumber()		//Displays current question number 
 	{
 		questionNumberView.setText("Question " + String.valueOf(currentQuestion));
 	}
@@ -89,35 +106,35 @@ public class MainActivity extends Activity {
 	
 	RadioGroup group=(RadioGroup)findViewById(R.id.radioGroup1);
 	answer=(RadioButton)findViewById(group.getCheckedRadioButtonId());
-
-		
-		if(questionNum==0){
-			
-			answerView.setText(" ");
-			
-		}
 	
-		if(answer.getText().toString()==returnedAnswer){
+		if(answer.getText().toString()==returnedAnswer){	//Check if given answer is correct 
 			
 			score++;
-			answerView.setText("The last question was answered Correctly :)");
+			answerView.setText("The last question was answered Correctly :)"); //returns feedback of correctly answered question
 			
 		}
 		
-		else{
+		else{	//returns feedback on wrongly answered question
 			
 			answerView.setText("The last question was answered incorrectly :(" + "\n" + "Correct answer was: " +  returnedAnswer);
 			
 		}
 	
 
-	if(group.getCheckedRadioButtonId() == -1){
+	if(group.getCheckedRadioButtonId() == -1){		//Returns an error if no radio button selected and answer is submitted
 		
 		Toast.makeText(getApplicationContext(), "You didn't select an answer ya bleedin muppawn!",
 		Toast.LENGTH_LONG).show();
 	}
 	
-	else{
+	
+	else if(questionNum==4){
+		
+		getResults();
+		
+	}
+	
+	else{ //Loads up next question
 		questionView();
 		}
 	}
@@ -125,16 +142,17 @@ public class MainActivity extends Activity {
 	
 	public void questionView(){ //Loads up next question
 		
-		questionNum++;
+//		questionNum++;
 		
-		if(questionNum>5){		//When questions answered, show results
-						
-			questionNum = 0;
-			Intent i = new Intent(getApplicationContext(), Results.class);
-			i.putExtra("Score", score);
-			startActivity(i);
-			finish();
-		}
+//		if(questionNum>5){		//When questions answered, show results
+//						
+//			questionNum = 0;
+//			Intent i = new Intent(getApplicationContext(), Results.class);
+//			i.putExtra("Score", score);
+//			Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+//			startActivity(i, bndlanimation);
+//			finish();
+//		}
 		
 		List<Button> buttons = new ArrayList<Button>();
 		
@@ -183,6 +201,13 @@ public class MainActivity extends Activity {
 		
 		Dbb.close();
 
+		if(x>50){
+			
+			image = getResources().getDrawable(images[2]);		//Setting the image view
+			imageView.setImageDrawable(image);
+			
+		}
+		
 	}
 		
 	@Override
@@ -199,5 +224,15 @@ public class MainActivity extends Activity {
 	   
 	}
 
+	public void getResults(){
+		
+		questionNum = 0;
+		Intent i = new Intent(getApplicationContext(), Results.class);
+		i.putExtra("Score", score);
+		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+		startActivity(i, bndlanimation);
+		finish();
+		
+	}
 	
 }
