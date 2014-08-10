@@ -370,7 +370,7 @@ public class Database {
 	
 	createEntry("Which of the following is the correct formula for the formation of ATP?", "ADP + P + energy -> ATP", "ADP + P -> ATP", "ADP + D + P -> ATP", "ADP -> ATP");
 	
-	//DNA () (137) (23)
+	//Evolution/DNA () (137) (53)
 	
 	createEntry("DNA consists of...", "Two parallel strands of nucleotides coiled in a double helix", "Three parallel strands of nucleotides coiled in a double helix", "Two perpendicular strands of nucleotides coiled in a double helix", "One strand of nucleotides coiled in a double helix");
 	
@@ -439,6 +439,46 @@ public class Database {
 	createEntry("The individuals with the more favourable variations....", "Live longer and have more offspring than those less adapted", "Live shorter and have more offspring than those less adapted", "Live longer and have less offspring than those less adapted", "The favourable variations have no effect");
 	
 	createEntry("Which of the following is valid evidence for evolution?", "All answers provide valid evidence for evolution" ,"Comparative anatomy", "Fossils, e.g. the horse", "Comparative embryology");
+	
+	createEntry("Genetics is defined as...", "The study of heredity and variation", "The passing on of characteristics from parents to offspring", "The differences between members of a species", "A unit of heredity, composed of DNA");
+	
+	createEntry("Heredity is defined as...","The passing on of characteristics from parents to offspring", "The study of heredity and variation", "The differences between members of a species", "A unit of heredity, composed of DNA");
+
+	createEntry("Variation is defined as...","The differences between members of a species","The passing on of characteristics from parents to offspring", "The study of heredity and variation",  "A unit of heredity, composed of DNA");
+
+	createEntry("Species is defined as...","Organisms capable of interbreeding and producing fertile offspring","The passing on of characteristics from parents to offspring", "The study of heredity and variation",  "A unit of heredity, composed of DNA");
+
+	createEntry("A gene is defined as...", "A unit of heredity, composed of DNA", "The differences between members of a species","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("A locus is defined as...", "The position of a gene on a chromosome", "The differences between members of a species","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("Alleles is defined as...", "Alternative forms of the same gene", "The differences between members of a species","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("A genotype is defined as...", "The genetic make-up of an organism", "The differences between members of a species","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("A phenotype is defined as...", "The visible expression of the genotype", "The differences between members of a species","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("A dominant gene is defined as...", "An allele that is expressed when it is homozygous and heterozygous", "An allele that is only expressed when it is homozygous","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("A recessive gene is defined as...", "An allele that is only expressed when it is homozygous", "An allele that is expressed when it is homozygous and heterozygous","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("Homozygous is defined as...", "A pair of identical alleles (genes) for a characteristic", "A pair of different alleles (genes) for a characteristic","The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("Heterozygous is defined as...", "A pair of different alleles (genes) for a characteristic","A pair of identical alleles (genes) for a characteristic", "The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("Gametes are defined as...", "Haploid sex cells (male & female) that fuse during sexual reproduction to form a diploid zygote ","A pair of identical alleles (genes) for a characteristic", "The passing on of characteristics from parents to offspring", "The study of heredity and variation");
+
+	createEntry("The 1st law of segregation states that...", "Characteristics are controlled by a pair of genes that separate during gamete formation - only one factor of each pair is present in a gamete", "During gamete formation, either one of a pair of allesls may enter a gamete with either one of another pair of alleles", "Characteristics are controlled one factor only", "None of the above");
+	
+	createEntry("Linked genes are...", "Genes on the same chromosome that are inherited together", "Genes on different chromosomes that are inherited separately", "Genes on the same chromosome that are inherited separately", "Genes ones on the same chromosome that are inherited together");
+	
+	createEntry("Do linked genes obey Mendel's 2nd law?", "No", "Yes", "Sometimes", "");
+	
+	createEntry("Sex-linked genes are...", "Genes carried on the sex chromosomes, usually on the X chromosome, e.g. Colour vision", "Genes carried on normal chromosomes, usually on the X chromosome, e.g. Colour vision", "Genes on the same chromosome that are inherited separately", "Genes ones on the same chromosome that are inherited together");
+	
+	createEntry("Non-nuclear DNA is...", "DNA found in the mitochondria and chloroplasts", "DNA found in the nucleus", "DNA found in the nucleus and ribosomes", "None of the above");
+	
+	//Classification or organisms/Viruses (190)
 	
 	}
 

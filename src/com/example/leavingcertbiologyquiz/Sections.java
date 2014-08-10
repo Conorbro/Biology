@@ -71,7 +71,7 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(123, 117);
+				startQuiz(137, 117);
 			
 			}});
 		
@@ -79,7 +79,7 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(137, 123);
+				startQuiz(190, 137);
 			
 			}});
 		
