@@ -478,7 +478,53 @@ public class Database {
 	
 	createEntry("Non-nuclear DNA is...", "DNA found in the mitochondria and chloroplasts", "DNA found in the nucleus", "DNA found in the nucleus and ribosomes", "None of the above");
 	
-	//Classification or organisms/Viruses (190)
+	//Classification or organisms/Viruses/Bacteria (190)
+	
+	createEntry("What part of the animal kingdom are unicellular bacteria apart of?", "Monera", "Animal", "Protoctista", "Fungi");
+	
+	createEntry("What part of the animal kingdom are amoeba apart of?", "Protoctista", "Monera", "Animal",  "Fungi");
+
+	createEntry("What part of the animal kingdom are mushrooms and yeast apart of?", "Fungi", "Monera", "Animal", "Protoctista");
+
+	createEntry("What part of the animal kingdom are humans apart of?","Animal", "Monera",  "Protoctista", "Fungi");
+
+	createEntry("What part of the animal kingdom are flowering plants apart of?", "Plant", "Animal", "Protoctista", "Fungi");
+
+	createEntry("Which of the following is NOT a feature of monocotyledons?", "Two cotyledons", "One cotyledon", "Parallel venation in leaves", "Herbaceous");
+	
+	createEntry("Which of the following is NOT a feature of Dicotyledons?", "Parallel venation in leaves", "Ring of vascular bundles", "Two cotyledons", "Reticulate venation in leaves");
+	
+	createEntry("Which of the following is NOT a valid shape for a virus?", "All answers are valid", "Rod", "Spherical", "Complex");
+	
+	createEntry("Which of the following is NOT a non-living feature of a virus", "All answers are valid", "Non-cellular", "No cell organelles", "Consist of only one nucleic acid (DNA or RNA) inside a protein coat");
+	
+	createEntry("Select the correct order of steps for viral replication", "Virus attaches to host, injects nucleic acid, protein coat formed, nucleic acid replicates, new viruses formed, host cell bursts releasing the new viruses", "Virus attaches to host, injects nucleic acid, nucleic acid replicates, protein coat formed,  new viruses formed, host cell bursts releasing the new viruses", "Virus attaches to host,  nucleic acid replicates, protein coat formed, injects nucleic acid, new viruses formed, host cell bursts releasing the new viruses", "Virus attaches to host, injects nucleic acid, protein coat formed, host cell bursts releasing the new viruses nucleic acid replicates, new viruses formed");
+
+	createEntry("Name a beneficial effect of viruses", "Formation of vaccines", "Polio and Aids", "Foot and mout", "Tomao mosaic disease");
+	
+	createEntry("Which of the following is NOT a valid shape for bacteria?", "All answers are valid", "Round (coccus)", "Rod", "Spiral");
+
+	createEntry("How do bacteria reproduce?", "Asexually by binary fission", "Sexually", "Sexually and asexually", "Bacteria do not reproduce, they grow from dead matter");
+	
+	createEntry("Endospores are...", "Resistant, thick-walled spores formed within the cell under adverse conditions", "Fragile, think-walled spores formed withing the cell under favourable conditions", "Fragile, thick-walled spores formed within the cell under adverse conditions", "None of the above");
+	
+	createEntry("How do autotrophic bacteria obtain their nutrition?", "They make their own food (photosynthetic/chemosynthetic", "Via parasitic/saprophytic means", "Bacteria do not require any nutrition", "None of the above");
+	
+	createEntry("How do heterotrophic bacteria obtain their nutrition?", "Via parasitic/saprophytic means", "They make their own food (photosynthetic/chemosynthetic", "Bacteria do not require any nutrition", "None of the above");
+	
+	createEntry("Select the correct order of the growth curve of bacteria in culture", "Lag, Log, Stationary, Decline, Survival", "Log, Lag, Stationary, Decline, Survival", "Log, Survival, Decline, Lag, Stationary", "Stationary, Log, Decline, Survival, Lag");
+
+	createEntry("Which of the following is a factor affecting the growth of cultured bacteria?", "All answers are valid", "Temperature and pH", "Oxygen concentration", "External solute concentration and pressure");
+	
+	createEntry("What is the difference between batch and continuous flow processing?", "Fixed amount of nutrient in batch processing - Nutrient constantly added in continuous flow", "Fixed amount of nutrient in continuous flow processing - Nutrient constantly added in batch processing", "There is no difference between either method", "None of the above");
+	
+	createEntry("What are antibiotics?", "Chemicals produced by fungi and bacteria that inhibit or kill other bacteria", "Chemicals produced by viruses that kill fungi and bacteria", "Chemicals produced by fungi and bacteria that inhibit or kill viruses", "Chemicals produced by fungi and bacteria that promote the growth of bacteria");
+	
+	createEntry("Which of the following is a benefit of bacteria", "Production of antibiotics", "Tetanus", "Food decay", "Tonsillitis");
+	
+	createEntry("Which of the following is a harmful effect of bacteria", "Human disease", "Food", "Vitamins in the human large intestine", "Production of antibiotics");
+	
+	createEntry("How do antibiotic resistant pathogenic bacteria come about?", "Over-exposure to to an antibiotic, mutant antibiotic strains prosper", "Under-exposure to to an antibiotic, mutant antibiotic strains prosper", "None of the above", "They don't");
 	
 	}
 
