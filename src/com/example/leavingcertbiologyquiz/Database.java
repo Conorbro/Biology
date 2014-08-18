@@ -224,7 +224,7 @@ public class Database {
 	
 	createEntry("Which Animal Kingdom are bacteria a part of?", "Monera", "Fungi", "Protocitsta", "Animal");
 	
-	createEntry("Which Animal Kingdom are mushrooms a part of?", "", "Monera", "Fungi", "Protocitsta");
+	createEntry("Which Animal Kingdom are mushrooms a part of?", "Fungi", "Monera", "Animal", "Protocitsta");
 
 	createEntry("Which Animal Kingdom are amoebas a part of?", "Protocitsta", "Monera", "Fungi", "Plant");
 
@@ -266,7 +266,7 @@ public class Database {
 
 	createEntry("The function(s) of the nucleus are...","Hold DNA and to control the cell's activites", "Protein synthesis","To support the cell and prevent bursting",   "Photosynthesis");
 
-	createEntry("Prokaryotic cells...", "Do not have a membrane-bound nucleus and organelles such as mitochondria and choloplasts (Monera kingdom", "Have a nucleus bounded by a membrane and mitochondria and chloroplasts", "None of the above", "Have no nucleus present in the cytoplasm");
+	createEntry("Prokaryotic cells...", "Do not have a membrane-bound nucleus and organelles such as mitochondria and choloplasts (Monera kingdom)", "Have a nucleus bounded by a membrane and mitochondria and chloroplasts", "None of the above", "Have no nucleus present in the cytoplasm");
 	
 	createEntry("Eukaryotic cells...", "Have a nucleus bounded by a membrane and mitochondria and chloroplasts","Do not have a membrane-bound nucleus and organelles such as mitochondria and choloplasts (Monera kingdom",  "None of the above", "Have no nucleus present in the cytoplasm");
 
@@ -478,7 +478,7 @@ public class Database {
 	
 	createEntry("Non-nuclear DNA is...", "DNA found in the mitochondria and chloroplasts", "DNA found in the nucleus", "DNA found in the nucleus and ribosomes", "None of the above");
 	
-	//Classification or organisms/Viruses/Bacteria (190)
+	//Classification or organisms/Viruses/Bacteria/Fungi (190)
 	
 	createEntry("What part of the animal kingdom are unicellular bacteria apart of?", "Monera", "Animal", "Protoctista", "Fungi");
 	
@@ -526,7 +526,76 @@ public class Database {
 	
 	createEntry("How do antibiotic resistant pathogenic bacteria come about?", "Over-exposure to to an antibiotic, mutant antibiotic strains prosper", "Under-exposure to to an antibiotic, mutant antibiotic strains prosper", "None of the above", "They don't");
 	
+	createEntry("Rhizopus is...", "A saprophytic fungus found on bread and other starchy foods", "A type of bacteria found in decaying organic matter", "A type of virus transfered via sexual intercourse", "None of the above");
+	
+	createEntry("Select the correct order of steps that occurs in the asexual reproduction of Rhizopus", "Sporangiophores grow upwards - sporangia form - spores formed by mitosis are released and dispered - spores germinate forming new mycelia", "Sporangia form - spores formed by mitosis are released and dispered - sporangiophores grow upwards - spores germinate forming new mycelia", "Spores germinate forming new mycelia - spores formed by mitosis are released and dispered - sporangiophores grow upwards - sporangiophores grow upwards", "Spores formed by mitosis are released and dispered - sporangiophores grow upwards - sporangiophores grow upwards");
+	
+	createEntry("Yeast is a...", "A unicellular saprophytic fungus", "A multicellular bacteria" , "A unicellular saprophytic virus", "A multicellular virus");
+	
+	createEntry("Yeast reproduces...", "Asexually by budding", "Sexually", "Sexually by budding", "Asexually");
+	
+	createEntry("Select the correct series of steps for the reproduction of yeast", "Nucleus divides by mitosis - One nucleus moves into the bud - Bud is cut off forming a new cell", "One nucleus moves into the bud - Bud is cut off forming a new cell", "Nucleus divides by mitosis -One nucleus moves into the bud - Bud is cut off forming a new cell", "Bud is cut off forming a new cell - Nucleus divides by mitosis - One nucleus moves into the bud");
+	
+	createEntry("Which of the following is an economic importance of fungi?", "Production of antibiotics, e.g. penicillin", "Ringworm", "Thrush", "Athletes foot");
+	
+	createEntry("Which of the following is a harmful effect of fungi?", "Diseases in humans",  "Production of antibiotics", "Production of alcohol by yeast", "Bread making");
+	
+	createEntry("What is osmoregulation in amoeba?", "The maintanence of the H2O balance in the cytoplasm of the amoeba", "The maintance of the O2 levels in the cytoplasm of the amoeba", "None of the above", "The consumption of H2O by an amoeba");
+	
+	//Flowering Plant Structure (221)
+	
+	createEntry("What are the functions of the roots?", "Anchor plant, absorb H2O & minearals, food storage", "Photosynthesis, transpiration, food storage", "Support leaves + flowers, transport of minears/food/H2O", "Sexual reproduction");
+	
+	createEntry("What are the functions of the stems?","Support leaves + flowers, transport of minears/food/H2O", "Anchor plant, absorb H2O & minearals, food storage", "Photosynthesis, transpiration, food storage",  "Sexual reproduction");
+
+	createEntry("What are the functions of the leaves?", "Photosynthesis, transpiration, food storage", "Support leaves + flowers, transport of minears/food/H2O","Anchor plant, absorb H2O & minearals, food storage",  "Sexual reproduction");
+
+	createEntry("What are the functions of the buds?", "Growth of main stem + side branches, formation of flowers, food storage", "Photosynthesis, transpiration, food storage", "Support leaves + flowers, transport of minears/food/H2O", "Sexual reproduction");
+
+	createEntry("What are the functions of the flowers?", "Sexual reproduction", "Anchor plant, absorb H2O & minearals, food storage", "Photosynthesis, transpiration, food storage", "Support leaves + flowers, transport of minears/food/H2O");
+
+	createEntry("What is a meristem?", "A region of mitotic division in plants found in the shoot tip and root tip", "A region of mitotic division in plants found in the roots and stem", "A region of mitotic division in plants found in the flower petals", "A region of mitotic division in plants found only in the shoot tip");
+	
+	createEntry("Dermal tissue...", "Forms the outer epidermis for protection", "Lies between the dermis and vascular bundles for storage and packing", "Consists of xylem and phloem in vascular bundles for transport", "None of the above");
+	
+	createEntry("Ground tissue...", "Lies between the dermis and vascular bundles for storage and packing","Forms the outer epidermis for protection",  "Consists of xylem and phloem in vascular bundles for transport", "None of the above");
+
+	createEntry("Vascular tissue...", "Consists of xylem and phloem in vascular bundles for transport", "Forms the outer epidermis for protection", "Lies between the dermis and vascular bundles for storage and packing", "None of the above");
+
+	createEntry("What are the function(s) of xylem?", "Transport of water + minerals and mechanical support", "The transport of food from leaves to the rest of the plant (translocation)", "Transport of water only", "Mechanical support only");
+	
+	createEntry("What does phloem consist of?", "Sieve tubes and companion cells", "Epidermus", "Vascular tissue", "Xylem");
+	
+	createEntry("What is the difference between xylem vessels and xylem tracheids?", "Xylem vessel has no end wall, tracheids do", "Vessels have a thick lignified wall, tracheids don't", "Tracheid have pits, vessels do not", "There is no difference");
+	
+	createEntry("What adaption do root hairs have to increase water absorbtion?", "Large surface area", "Small surface area", "Root hairs do not absorb water", "Short root hairs");
+	
+	createEntry("What helps in the upward movement of H2O in xylem of plants?", "Root pressure and transpiration", "Transpiration only", "Root pressure only", "Phloem");
+	
+	createEntry("Transpiration is defined as...", "The loss of H2O vapour from a plant", "The force due to the intake of H2O that pushes H2O up the xylem", "The transport of water and minerals", "The conversion of CO2 to O2 by plants");
+	
+	createEntry("Root pressure is...", "The force due to the intake of H2O that pushes H2O up the xylem", "The loss of H2O vapour from a plant", "The transport of water and minerals", "The conversion of CO2 to O2 by plants");
+	
+	createEntry("In plants, carbohydrate is stored as...", "Starch", "Amylose", "Glycogen", "Plants do not store carbohydrates");
+
+	createEntry("In plants oxygen is either...", "Used in plant respiration or it may diffuse out via the stomata", "Used in plant photosynthesis or it may diffuse out via the stomata", "Used in photosynthesis only", "It only diffuses out via the stomata");
+	
+	createEntry("Give an example of a modified root that stores food in plants", "Tap root in carrots", "Stem tuber in potatos", "Bulb in onions", "Chestnut in oak tree");
+	
+	createEntry("Give an example of a modified stem that stores food in plants", "Stem tuber in potatos","Tap root in carrots",  "Bulb in onions", "Chestnut in oak tree");
+
+	createEntry("Give an example of a modified leaf that stores food in plants", "Bulb in onions","Stem tuber in potatos", "Tap root in carrots",   "Chestnut in oak tree");
+
+	createEntry("Which of the following is an adaptation in leaves for gas exchange?", "All answers are valid", "Large number of stomata", "Large surface area", "Thin leaves");
+	
+	createEntry("What are lenticels?", "The openings in bark of woody stems for the exchange of gases", "The openings in the epidermis of leaves for gas exchange", "A type of food produced by plants", "None of the above");
+	
+	createEntry("What do guard cells do?", "They control the opening and closing of the stomata in leaves", "They regulate the entry of water through the root hairs", "They prevent the leakage of H2O and minerals from the xylem and phloem in the stem", "All answers are valid");
+	
+	//(247)
+	
 	}
+	
 
 	public static long createEntry(String question, String answer, String answer1, String answer2, String answer3) { //Adds to Database
 		// TODO Auto-generated method stub

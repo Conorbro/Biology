@@ -18,6 +18,9 @@ public class Sections extends Activity {
 	private Button cell_continuity;
 	private Button enzymes;
 	private Button dna;
+	private Button bacteria;
+	private Button plants;
+	
 	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,9 @@ public class Sections extends Activity {
 		cell = (Button)findViewById(R.id.bcell);
 		cell_continuity = (Button)findViewById(R.id.bcellcontinuity);
 		dna = (Button)findViewById(R.id.bdna);
+		bacteria = (Button)findViewById(R.id.bmicro);
+		plants = (Button)findViewById(R.id.bplantsstructure);
+
 		
 		food.setOnClickListener(new OnClickListener() {
 			@Override
@@ -80,6 +86,22 @@ public class Sections extends Activity {
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
 				startQuiz(190, 137);
+			
+			}});
+		
+		bacteria.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(221, 190);
+			
+			}});
+		
+		plants.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(247, 221);
 			
 			}});
 		

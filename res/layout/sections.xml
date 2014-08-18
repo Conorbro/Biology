@@ -3,88 +3,101 @@
     android:layout_height="fill_parent"
     android:background="#177246" >
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#177246"
-        android:gravity="left" >
+        android:columnCount="2"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:rowCount="7" >
+
+        <Button
+            android:id="@+id/bfood"
+            android:layout_width="185dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:drawableBottom="@drawable/ic_launcher"
+            android:text="1. Food"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/bcell"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/becology"
+            android:layout_width="187dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
             android:drawableBottom="@drawable/ic_launcher"
             android:text="3. The Cell"
             android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/bcellcontinuity"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignRight="@+id/bcell"
-            android:layout_below="@+id/bcell"
+            android:layout_width="193dp"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
             android:drawableBottom="@drawable/ic_launcher"
             android:text="4. Cell Continuity"
             android:textColor="#FFFFFF" />
 
         <Button
+            android:id="@+id/bdna"
+            android:layout_width="194dp"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:drawableBottom="@drawable/ic_launcher"
+            android:text="6. DNA"
+            android:textColor="#FFFFFF" />
+
+        <Button
             android:id="@+id/benzymes"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignRight="@+id/bcellcontinuity"
-            android:layout_below="@+id/bcellcontinuity"
+            android:layout_width="188dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
             android:drawableBottom="@drawable/ic_launcher"
             android:text="5. Enzymes"
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/becology"
+            android:id="@+id/Button01"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/bfood"
+            android:layout_gravity="left"
+            android:drawableBottom="@drawable/ic_launcher"
+            android:text="7. Evolution - Genes"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bmicro"
+            android:layout_width="171dp"
+            android:layout_gravity="fill_horizontal"
+            android:drawableBottom="@drawable/ic_launcher"
+            android:text="8. Microorganisms/Fungi"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/becology"
+            android:layout_width="196dp"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
             android:drawableBottom="@drawable/ic_launcher"
             android:text="2. Ecology"
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/bfood"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:id="@+id/bplantsstructure"
+            android:layout_width="178dp"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="5"
             android:drawableBottom="@drawable/ic_launcher"
-            android:text="1. Food"
-            android:textColor="#FFFFFF" />
-        
-  		 <Button
-            android:id="@+id/bdna"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignRight="@+id/bcellcontinuity"
-            android:layout_below="@+id/benzymes"
-            android:drawableBottom="@drawable/ic_launcher"
-            android:text="6. DNA"
+            android:text="9. Plant Structure"
             android:textColor="#FFFFFF" />
 
-  		 <Button
-  		     android:id="@+id/bevolution"
-  		     android:layout_width="fill_parent"
-  		     android:layout_height="wrap_content"
-  		     android:layout_alignParentLeft="true"
-  		     android:layout_below="@+id/bdna"
-  		     android:drawableBottom="@drawable/ic_launcher"
-  		     android:text="7. Evolution - Genes"
-  		     android:textColor="#FFFFFF" />
-   
-    </RelativeLayout>
+    </GridLayout>
 
 </ScrollView>

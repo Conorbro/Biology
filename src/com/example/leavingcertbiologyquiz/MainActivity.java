@@ -37,14 +37,15 @@ public class MainActivity extends Activity {
 	public int score;
 	public String returnedAnswer;
 	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
-	public ImageView imageView;
-	public Drawable image;
+	public ImageView imageView, faceView;
+	public Drawable image, faceImage;
 	
 	public int images[] = {			
 		R.drawable.ecology,
 		R.drawable.food,
 		R.drawable.ic_launcher
 	};
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +69,8 @@ public class MainActivity extends Activity {
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
-		imageView = (ImageView)findViewById(R.id.imageView1);
-		
+		imageView = (ImageView)findViewById(R.id.ivface2);
+		faceView = (ImageView)findViewById(R.id.ivface);
 		image = getResources().getDrawable(images[1]);		//Setting the image view
 		imageView.setImageDrawable(image);
 
@@ -79,6 +80,9 @@ public class MainActivity extends Activity {
 
 		answerView.setText(" ");
 
+		faceImage = getResources().getDrawable(R.drawable.face2);
+		faceView.setImageDrawable(faceImage);
+		
 		questionButton.setOnClickListener(new OnClickListener(){ //Generate next question to answer
 			
 			public void onClick(View v) {
@@ -110,14 +114,15 @@ public class MainActivity extends Activity {
 		if(answer.getText().toString()==returnedAnswer){	//Check if given answer is correct 
 			
 			score++;
-			answerView.setText("The last question was answered Correctly :)"); //returns feedback of correctly answered question
-			
-		}
+			answerView.setText("The last question was answered Correctly"); //returns feedback of correctly answered question
+			faceImage = getResources().getDrawable(R.drawable.face1);		//Setting the image view
+			faceView.setImageDrawable(faceImage);		}
 		
 		else{	//returns feedback on wrongly answered question
 			
-			answerView.setText("The last question was answered incorrectly :(" + "\n" + "Correct answer was: " +  returnedAnswer);
-			
+			answerView.setText("The last question was answered incorrectly " + "\n" + "Correct answer was: " +  returnedAnswer);
+			faceImage = getResources().getDrawable(R.drawable.face3);
+			faceView.setImageDrawable(faceImage);
 		}
 	
 
