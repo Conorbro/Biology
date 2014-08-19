@@ -592,7 +592,35 @@ public class Database {
 	
 	createEntry("What do guard cells do?", "They control the opening and closing of the stomata in leaves", "They regulate the entry of water through the root hairs", "They prevent the leakage of H2O and minerals from the xylem and phloem in the stem", "All answers are valid");
 	
-	//(247)
+	//The Heart and Circulatory system (247)
+	
+	createEntry("In blood, plasma is...", "The liquid part of blood", "Colourless, nucleus containing cell that defends against disease" , "No nucleus, cell fragments that clot the blood", "Bi-concave, haemoglobin containing, no nucleus or mitochondria cell that transports O2");
+	
+	createEntry("In blood, red blood cells are...", "Bi-concave, haemoglobin containing, no nucleus or mitochondria cell that transports O2", "The liquid part of blood", "Colourless, nucleus containing cell that defends against disease" , "No nucleus, cell fragments that clot the blood");
+
+	createEntry("In blood, white blood cells are...", "Colourless, nucleus containing cell that defends against disease" ,"Bi-concave, haemoglobin containing, no nucleus or mitochondria cell that transports O2", "The liquid part of blood",  "No nucleus, cell fragments that clot the blood");
+
+	createEntry("In blood, platelets are...",  "No nucleus, cell fragments that clot the blood", "Colourless, nucleus containing cell that defends against disease" ,"Bi-concave, haemoglobin containing, no nucleus or mitochondria cell that transports O2", "The liquid part of blood");
+
+	createEntry("Which of the following are the correct blood groups?", "A B AB O", "A B" , "A B O C", "AB BA OA B");
+	
+	createEntry("Select the correct order in which blood flows around the body", "Heart - arteries - arterioles - capillaries - venules - veins - heart", "Heart - arterioles - arteries - veins - venules - capillaries - heart", "Heart - veins - venules - capillaries - arterioles - arteries - heart", "Heart - capillaries - venules - arteries - arterioles - veins - heart");
+	
+	createEntry("Where does blood flow in the pulmonary system?", "Heart - Lungs - Heart", "Heart - Liver - Heart", "Heart - Rest of body - Heart", "Heart - Heart");
+	
+	createEntry("Where does blood flow in the systemic system?", "Heart - Rest of body - Heart","Heart - Lungs - Heart", "Heart - Liver - Heart",  "Heart - Heart");
+
+	createEntry("Which of the following statements is correct in regards to blood flow?", "Arteries carry blood away from the heart at high pressure", "Arteries carry blood to the heart at high pressure", "Arteries carry blood to the heart at low pressure", "Arteries carry blood away from the heart at low pressure");
+	
+	createEntry("Which of the following statements is correct in regards to blood flow?", "Veins carry blood to the heart at low pressure","Veins carry blood away from the heart at high pressure", "Veins carry blood to the heart at high pressure",  "Veins carry blood away from the heart at low pressure");
+	
+	createEntry("Do arteries and/or veins have valves?", "Only veins have valves present", "Bot arteries and veins have valves present", "Only arteries have valves present", "Neither contain valves");
+	
+	createEntry("Which of the following statements is correct?", "Arteries have a thick layer of muscle and a small lumen while veins have a thin layer of muscle and a large lumen", "Arteries have a thin layer of muscle and a small lumen while veins have a thick layer of muscle and a large lumen", "Arteries have a thick layer of muscle and a large lumen while veins have a thin layer of muscle and a small lumen", "Arteries have a thick layer of muscle and no lumen while veins have a thin layer of muscle and a large lumen");
+	
+	createEntry("What are capillaries?", "Tiny tubes that link arterioles to venules and allow exchange between blood and tissues", "Large tubes that link veins to arteries", "Small tubes that link arteries to arterioles and allow exchange between blood and tissues", "None of the above");
+	
+	createEntry("Capillaries are consist of...", "Thin, porous walls to allow materials in and out", "Thick impermeable walls", "Thick, porous walls that do not allow materials in and out", "Thin impermeable walls");
 	
 	}
 	

@@ -21,6 +21,7 @@ public class Sections extends Activity {
 	private Button bacteria;
 	private Button plants;
 	
+	
 	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,6 @@ public class Sections extends Activity {
 		dna = (Button)findViewById(R.id.bdna);
 		bacteria = (Button)findViewById(R.id.bmicro);
 		plants = (Button)findViewById(R.id.bplantsstructure);
-
 		
 		food.setOnClickListener(new OnClickListener() {
 			@Override
