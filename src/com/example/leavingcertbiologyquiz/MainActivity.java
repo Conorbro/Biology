@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 	private TextView answerView; //Show Answer Text
 	private TextView questionNumberView; //Displays Question number
 	private RadioButton answer;	
-	public int max, min, value;
+	public int max, min, value, x;
 	public int questionNum;
 	public int score;
 	public String returnedAnswer;
@@ -63,6 +63,7 @@ public class MainActivity extends Activity {
 
 		final int soundId = sp.load(this, R.raw.click, 1);
 		score = 0;
+		x = 0;
 		questionNum = 0;
 		currentQuestion = 0;
 		questionButton = (Button)findViewById(R.id.button1);
@@ -166,17 +167,27 @@ public class MainActivity extends Activity {
 	    buttons.add((Button)findViewById(R.id.radioButton3));
 	    buttons.add((Button)findViewById(R.id.radioButton4));
 		
-		Random rand = new Random();
+	//	Random rand = new Random();
 		
-		int x = 0;
 		
-	if(max!=0){
-		 x = rand.nextInt(max - min) + min;
-	}
+		int y = x;
+		
+	//if(max!=0){
+	//	 x = rand.nextInt(max - min) + min;
+
+		x = rand(max, min);
+		
+		while(x==y){
+			
+			x = rand(max,min);
+			
+		}
+		
+//	}
 	
-	else {	 x = rand.nextInt(120) + 1;
+	//else {	 //x = rand.nextInt(120) + 1;
 	
-	}
+	//}
 		currentQuestion++;
 		Database Dbb = new Database(this);
 		Dbb.open();
@@ -229,6 +240,15 @@ public class MainActivity extends Activity {
 	   
 	}
 
+	public int rand(int max, int min){
+		
+		Random rand = new Random();
+		
+		int a = rand.nextInt(max - min) + min;;
+				
+		return a;
+	}
+	
 	public void getResults(){
 		
 		questionNum = 0;

@@ -622,7 +622,92 @@ public class Database {
 	
 	createEntry("Capillaries are consist of...", "Thin, porous walls to allow materials in and out", "Thick impermeable walls", "Thick, porous walls that do not allow materials in and out", "Thin impermeable walls");
 	
+	createEntry("During the cardiac cycle, diastole is when the heart muscle is...", "Relaxed" , "Contracted", "Taught", "Open");
+	
+	createEntry("During the cardiac cycle, systole is when the heart muscle is...", "Contracted","Relaxed" , "Taught", "Open");
+
+	createEntry("Where is the sinoatrial node located in the heart?", "In the wall of the right atrium", "In the wall of the left atrium", "In the vena cava", "In the septum");
+	
+	createEntry("What controls the controls heartbeat?", "The sinoatrial node", "Septum", "Tricuspid valve", "Chordae tendinae");
+	
+	createEntry("Which of the following factors does NOT affect heart rate?", "All answers are valid", "Exercise", "Fear", "Sleep");
+	
+	createEntry("What is blood pressure?", "The force of blood pushing against the wall of a blood vessel", "The wave of vibrations in arteries due to blood pbeing forced out of the ventricles", "The oxygen in moving around in blood", "None of the above");
+	
+	createEntry("What is pulse?","The wave of vibrations in arteries due to blood pbeing forced out of the ventricles", "The force of blood pushing against the wall of a blood vessel",  "The oxygen in moving around in blood", "None of the above");
+	
+	createEntry("What do the coronary arteries do?", "Supply blood to cardiac muscle", "Move blood from atriums to ventricles in the heart", "Supply blood to the brain", "Supply blood to the liver");
+	
+	createEntry("What is lymph?", "A colourless fluid formed from tissue fluid consisting of plasma and lymphocytes", "The force of blood pushing against the wall of a blood vessel", "The wave of vibrations in arteries due to blood pbeing forced out of the ventricles", "The oxygen in moving around in blood");
+	
+	createEntry("What is the lymphatic system?", "A one-way system that consists of lymph vessels and lymph nodes containing valves to prevent backflow of lymph", "None of the above", "A two-way system that consists of lymph vessels and lymph nodes containing valves to prevent backflow of lymph", "A three-way system that consists of lymph vessels and lymph nodes containing valves to prevent backflow of lymph");
+	
+	createEntry("What are the functions of the lymphatic system?", "Transport of tissue fluid to return it to the blood and defence against disease", "To regulate body temperature", "To optimise enzyme action", "To assist in digestion");
+	
+	//Human Nutrition (272)
+	
+	createEntry("Select the correct order of stages of human nutrition", "Ingestion, Digestion, Absorption, Egestion", "Egestion, Absorption, Digestion, Ingestion", "Absorption, Digestion, Egestion, Ingestion", "Egestion, Absorption, Ingestion, Digestion");
+	
+	createEntry("What carries out mechanical digestion in humans?", "Teeth and stomach", "Enzymes", "Liver", "Throat");
+	
+	createEntry("What carries out chemical digestion in humans?", "Enzymes", "Teeth and stomach", "Throat", "Liver");
+	
+	createEntry("What is the function of the epiglottis in digestive system?", "Prevents food from entering the trachea", "Churns food", "Cuts, chews, and grinds food up into smaller pieces", "Storage of bile");
+	
+	createEntry("What is the function of the teeth in digestive system?", "Cuts, chews, and grinds food up into smaller pieces","Prevents food from entering the trachea", "Churns food",  "Storage of bile");
+
+	createEntry("What is the function of the liver in digestive system?", "Produces bile which emulsifies lipid and neutralises acid","Prevents food from entering the trachea", "Churns food",  "Storage of bile");
+
+	createEntry("What is the function of the gall bladder in digestive system?","Storage of bile", "Cuts, chews, and grinds food up into smaller pieces","Prevents food from entering the trachea", "Churns food");
+
+	createEntry("What is the function of the illeum in the small intestine in digestive system?","Abosrbs nutrients from food", "Cuts, chews, and grinds food up into smaller pieces","Prevents food from entering the trachea", "Churns food");
+
+	createEntry("What is the function of the anus in digestive system?", "Egestion", "Digestion","Prevents food from entering the trachea", "Churns food");
+
+	createEntry("What is the function of the rectum in digestive system?", "Stores faeces", "Egestion", "Digestion","Prevents food from entering the trachea");
+
+	createEntry("What is the function of the colon in digestive system?","Absorbs H2O, symbiotic bacteria produce vitamins and kill pathogenic bacteria also" ,"Stores faeces", "Egestion", "Digestion");
+
+	createEntry("What is the function of the pancreas in digestive system?", "Neutralises acidic food", "Egestion", "Churns food", "Digestion");
+	
+	createEntry("What is the function of the oesophagus in digestive system?", "Moves food down into the stomach","Prevents food from entering the trachea", "Churns food",  "Storage of bile");
+
+	createEntry("What is the function of the stomach in digestive system?","Churns food, mucus lining protects stomach, pepsin turns proteins into peptides", "Cuts, chews, and grinds food up into smaller pieces","Prevents food from entering the trachea",   "Storage of bile");
+
+	createEntry("What is the role of fibre in the diet?", "Stiumates peristalsis", "Produces bile and heat", "Produces urea from the breakdown of excess amino acids", "Breaks down red blood cells and toxic chemicals taken from the blood");
+	
+	createEntry("Which of the following is NOT a function of the liver?", "Stiumates peristalsis", "Produces bile and heat", "Produces urea from the breakdown of excess amino acids", "Breaks down red blood cells and toxic chemicals taken from the blood");
+	
+	createEntry("Where does the hepatic artery carry blood to and from?", "From the aorta to the liver", "From the liver to the vena cava", "From the gut to the liver", "None of the above");
+	
+	createEntry("Where does the hepatic vein carry blood to and from?","From the liver to the vena cava", "From the aorta to the liver",  "From the gut to the liver", "None of the above");
+
+	createEntry("Where does the hepatic portal vein carry blood to and from?", "From the gut to the liver",  "From the aorta to the liver", "From the liver to the vena cava","None of the above");
+	
+	createEntry("Which of the following is an adaptation of the ileum for the absorption of food?", "All answers are valid", "Long tube with villi gives large surface area for absorption", "Villus walls are very thin and lymph lacteals", "Large network of blood capillaries");
+	
+	createEntry("What is the human dental formula?", "I 2/2, C 1/1, PM 2/2, M 3/3", "I 1/1, C 1/1, PM 3/3, M 2/2", "I 2/2, C 2/2, PM 3/3, M 2/2 ", "I 3/3, C 2/2, PM 1/1, M 1/1");
+	
+	//Human Excretion (292)
+	
+	createEntry("Excretion is defined as...", "The removal of waste products of metabolism from the body", "The process of treating a substance with heat, enzymes, or a solvent to promote decomposition or extract essential components", "A process in living organisms involving the production of energy, typically with the intake of oxygen and the release of carbon dioxide from the oxidation of complex organic substances", "None of the above");
+	
+	createEntry("What are the organs of excretion?", "Lungs, kidneys, skin", "Skin, bladder, kidneys", "Bladder, Lungs, Skin", "Lungs and Kidneys");
+	
+	createEntry("What are/is the major function(s) of the kidneys?", "Exrection and Osmoregualtion", "Excretion only", "Digestion", "Respiration and Osmoregulation");
+	
+	createEntry("What is osmoregulation?", "The maintenance of water balance and salt balance in body fluids", "The removal of urea, excess salts and salt balance in body fluids", "The production of urea", "Regulation of water pH in the body");
+	
+	createEntry("What does ADH stand for?", "Anti-diuretic hormone", "Anti-diarrhoea hormone", "Anti-deflamatory hormone", "Anti-death horomone");
+	
+	createEntry("Where is urine stored?", "The bladder", "Kidneys", "Gall bladder", "Liver");
+	
+	createEntry("Where is urine formed", "In nephron of the kidneys", "Bladder", "Urethra", "Rectum");
+	
+	
+	
 	}
+	
 	
 
 	public static long createEntry(String question, String answer, String answer1, String answer2, String answer3) { //Adds to Database
