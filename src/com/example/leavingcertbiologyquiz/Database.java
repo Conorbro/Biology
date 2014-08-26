@@ -704,7 +704,79 @@ public class Database {
 	
 	createEntry("Where is urine formed", "In nephron of the kidneys", "Bladder", "Urethra", "Rectum");
 	
+	createEntry("What is the function of the larynx?", "Prodcues sound", "Carries air to lungs", "Gas exchange", "Contains mucus which traps dirt and bacteria, cilia that moves mucus up to the mouth and cartilage rings keep air tubes open");
 	
+	createEntry("What is the function of the larynx?", "Prodcues sound", "Carries air to lungs", "Gas exchange", "Contains mucus which traps dirt and bacteria, cilia that moves mucus up to the mouth and cartilage rings keep air tubes open");
+
+	createEntry("What is the function of the trachea?","Contains mucus which traps dirt and bacteria, cilia that moves mucus up to the mouth and cartilage rings keep air tubes open", "Prodcues sound", "Carries air to lungs", "Gas exchange" );
+
+	createEntry("What is the function of bronchus?","Carries air into the lungs","Contains mucus which traps dirt and bacteria, cilia that moves mucus up to the mouth and cartilage rings keep air tubes open", "Prodcues sound",  "Gas exchange" );
+
+	createEntry("What is the function of the bronchioles?","Carres air to and from the alveoli", "Prodcues sound", "Carries air to lungs", "Gas exchange" );
+
+	createEntry("What is the function of the alveoli?", "Gas exchange","Carres air to and from the alveoli", "Prodcues sound", "Carries air to lungs" );
+
+	createEntry("Which of the following is NOT an adaptation of the alveoli for gas exchange?", "Thick walls", "Large surface area", "Thin walls", "Moist surface");
+	
+	createEntry("Select the correct order of stages for inhalation in the mechanism of breathing ", "Intercostal muscles contract, rib-cage moves up and out, diaphram contracts + flattens, volume of thorax increases, lung air pressure decreases, air flows into lungs", "Rib-cage moves up and out, diaphram contracts + flattens, volume of thorax increases, lung air pressure decreases, air flows into lungs", "Diaphram contracts + flattens, intercostal muscles contract, rib-cage moves up and out,  volume of thorax increases, lung air pressure decreases, air flows into lungs", "Rib-cage moves up and out, intercostal muscles contract, diaphram contracts + flattens, volume of thorax increases, lung air pressure decreases, air flows into lungs");
+	
+	createEntry("Select the correct order of stages for exhalation in the mechanism of breathing", "Intercostal muscles relax, rib-cage goes down and in, diaphram relaxes, thorax volum decreases, lung air pressure increases, air is forced out of lungs", "Rib-cage goes down and in, intercostal muscles relax,  diaphram relaxes, thorax volum decreases, lung air pressure increases, air is forced out of lungs", "Intercostal muscles relax, rib-cage goes down and in, diaphram relaxes, lung air pressure increases, thorax volum decreases,  air is forced out of lungs", "Rib-cage goes down and in, diaphram relaxes, thorax volum decreases, lung air pressure increases, air is forced out of lungs, intercostal muscles relax");
+	
+	createEntry("Which of the following controls the rate of breathing?", "The level of CO2 in the blood", "The level of O2 in the blood", "The level of O2 in the lungs", "The medulla oblongata in the brain");
+	
+	createEntry("Which of the following controls the centre of breathing?", "The medulla oblongata in the brain", "The level of CO2 in the blood", "The level of O2 in the blood", "The level of O2 in the lungs");
+	
+	createEntry("What are the symptoms of asthma?", "Shortness of breath, wheezy breathing, coughing", "Smooth, easy breathing", "Sore feet and tennis elbow", "Bad breath");
+	
+	createEntry("What are the causes of asthma?", "Allergens such as pollen and dust", "Acids", "Drugs", "Breathing in through your mouth rather than your nose");
+	
+	createEntry("How can asthma be treated?", "Inhaling drugs to dilate the bronchioles", "Inhaling drugs to contract the bronchioles", "Asthma cannot be treated", "Widening the rib-cage");
+	
+	createEntry("Name the major organs of homeostasis", "Kidney, lungs, liver, skin", "Liver, pancreas, stomach, heart", "Heart, pancreas, liver, brain", "Brain and lungs");
+	
+	createEntry("What is homeostasis?", "Keeping a constant internal environment in the body to allow cells to carry out normal metabolic activities", "", "", "");
+	
+	//Human musculoskeletal system (316)
+	
+	createEntry("What are the functions of the skeleton?", "Support, protection, movement", "Movement, growth, protection", "Support and protection", "Growth and Support");
+	
+	createEntry("What does the axial skeleton consist of?", "Skull, vertebrae(33), ribs(12), sternum", "Pectoral and pelvic girdles, arms and legs", "Cervical(7), thoraic(12), lumbar(5), sacrum(5), coccyx(4)", "None of the above");
+	
+	createEntry("What does the appendicular skeleton consist of?","Pectoral and pelvic girdles, arms and legs", "Cervical(7), thoraic(12), lumbar(5), sacrum(5), coccyx(4)", "Skull, vertebrae(33), ribs(12), sternum",  "None of the above");
+
+	createEntry("What do the vertebrae consist of?","Cervical(7), thoraic(12), lumbar(5), sacrum(5), coccyx(4)", "Skull, vertebrae(33), ribs(12), sternum", "Pectoral and pelvic girdles, arms and legs",  "None of the above");
+
+	createEntry("What is the function of compact bone?", "Strength and rigidity", "Stores fat", "Produces blood cells", "Absorbs shock and reduces friction");
+	
+	createEntry("What is the function of the medullary cavity?","Stores fat", "Strength and rigidity",  "Produces blood cells", "Absorbs shock and reduces friction");
+
+	createEntry("What is the function of spongy bone?", "Produces blood cells + provides strength and rigidity","Strength and rigidity", "Stores fat",  "Absorbs shock and reduces friction");
+
+	createEntry("What is the function of articular cartilage?", "Absorbs shock and reduces friction", "Strength and rigidity", "Stores fat", "Produces blood cells");
+
+	createEntry("What is the difference between osteoblasts and osteoclasts?", "Osteoblasts help make bone, osteoclasts help break down bone", "Osteblasts help break down bone, osteoclasts help make bone", "There is no difference", "Osteoblasts are only found in human bone unlike osteclasts which are found in all mammals");
+	
+	createEntry("Give an example of an immovable joint in the human skeletal system", "The skull and the pelvic girdle", "Between the vertebrae", "Hip, shoulder", "Elbow, knee");
+	
+	createEntry("Give an example of a slightly movable joint in the human skeletal system","Between the vertebrae", "The skull and the pelvic girdle",  "Hip, shoulder", "Elbow, knee");
+
+	createEntry("Give an example of a free moving or synovial joint joint in the human skeletal system", "Hip, shoulder", "The skull", "Between the vertebrae", "Pelvic girdle");
+	
+	createEntry("Ligaments connect...", "Bone to bone", "Muscle to bone", "Vessels to bone", "Vessels to arteries");
+	
+	createEntry("Tendons connect...", "Muscle to bone","Bone to bone",  "Vessels to bone", "Vessels to arteries");
+
+	createEntry("What are an antagonistic pair of muscles?", "A pair of muscles that have opposite effects", "A pair of muscles that have the same effects", "A pair of muscles that can't move without the other moving", "None of the above");
+	
+	createEntry("Give an example of a pair of antagonistic muscles", "Biceps and triceps", "Triceps and glutes", "Glutes and calves", "Calves and biceps");
+	
+	createEntry("Which of the following is a disorder of the musculoskeletal system?", "Osteoporosis", "Asthma", "AIDS", "Ebola");
+	
+	createEntry("What causes osteoporosis?", "All answers are valid","Lack of calcium", "Lack of exercise", "Aging");
+	
+	createEntry("How could one prevent getting osteoporosis?", "By having a calcium rich diet and exercising", "Avoiding calcium in their diet", "Sitting down all day watching tv", "Eating carrots");
+	
+	createEntry("How can osteoporosis be treated?", "With a calcium rich diet, vitamin D and medication", "Avoiding exercise", "Avoiding calcium and vitamin D", "It cannot be treated");
 	
 	}
 	
