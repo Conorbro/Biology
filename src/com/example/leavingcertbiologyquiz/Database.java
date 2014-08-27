@@ -644,7 +644,7 @@ public class Database {
 	
 	createEntry("What are the functions of the lymphatic system?", "Transport of tissue fluid to return it to the blood and defence against disease", "To regulate body temperature", "To optimise enzyme action", "To assist in digestion");
 	
-	//Human Nutrition (272)
+	//Human Nutrition and Human Excretion (272)
 	
 	createEntry("Select the correct order of stages of human nutrition", "Ingestion, Digestion, Absorption, Egestion", "Egestion, Absorption, Digestion, Ingestion", "Absorption, Digestion, Egestion, Ingestion", "Egestion, Absorption, Ingestion, Digestion");
 	
@@ -687,8 +687,6 @@ public class Database {
 	createEntry("Which of the following is an adaptation of the ileum for the absorption of food?", "All answers are valid", "Long tube with villi gives large surface area for absorption", "Villus walls are very thin and lymph lacteals", "Large network of blood capillaries");
 	
 	createEntry("What is the human dental formula?", "I 2/2, C 1/1, PM 2/2, M 3/3", "I 1/1, C 1/1, PM 3/3, M 2/2", "I 2/2, C 2/2, PM 3/3, M 2/2 ", "I 3/3, C 2/2, PM 1/1, M 1/1");
-	
-	//Human Excretion (292)
 	
 	createEntry("Excretion is defined as...", "The removal of waste products of metabolism from the body", "The process of treating a substance with heat, enzymes, or a solvent to promote decomposition or extract essential components", "A process in living organisms involving the production of energy, typically with the intake of oxygen and the release of carbon dioxide from the oxidation of complex organic substances", "None of the above");
 	
@@ -736,7 +734,7 @@ public class Database {
 	
 	createEntry("What is homeostasis?", "Keeping a constant internal environment in the body to allow cells to carry out normal metabolic activities", "", "", "");
 	
-	//Human musculoskeletal system (316)
+	//Human musculoskeletal system + Human nervous system (316)
 	
 	createEntry("What are the functions of the skeleton?", "Support, protection, movement", "Movement, growth, protection", "Support and protection", "Growth and Support");
 	
@@ -777,6 +775,60 @@ public class Database {
 	createEntry("How could one prevent getting osteoporosis?", "By having a calcium rich diet and exercising", "Avoiding calcium in their diet", "Sitting down all day watching tv", "Eating carrots");
 	
 	createEntry("How can osteoporosis be treated?", "With a calcium rich diet, vitamin D and medication", "Avoiding exercise", "Avoiding calcium and vitamin D", "It cannot be treated");
+	
+	createEntry("What does CNS stand for?", "Central Nervous System", "Control Nervous System", "Canal Nervous System", "Cerebellum Nervous System");
+	
+	createEntry("What does PNS stand for?", "Peripheral Nervous System", "Primary Nervous System", "Positional Nervous System", "Passive Nervous System");
+	
+	createEntry("What does the central nervous system consist of?", "The brain and spinal cord", "Cranianl nerves and spinal nerves", "Brain only", "Spinal cord only");
+	
+	createEntry("What does the peripheral nervous system consist of?", "Cranianl nerves and spinal nerves", "The brain and spinal cord",  "Brain only", "Spinal cord only");
+
+	createEntry("What is the function of dendrites in a nerve cell?", "To carry impulses to the body", "Produces neurotransmitter", "Carries impulses from cell body", "Protects axon and accelerates impulse transmission");
+	
+	createEntry("What is the function of the cell body in a nerve cell?",  "Produces neurotransmitter","To carry impulses to the body", "Carries impulses from cell body", "Protects axon and accelerates impulse transmission");
+
+	createEntry("What is the function of axons in a nerve cell?","Carries impulses from cell body", "To carry impulses to the body", "Produces neurotransmitter",  "Protects axon and accelerates impulse transmission");
+
+	createEntry("What is the function of schwann cells in a nerve cell?", "Produces myelin sheath", "Produces neurotransmitter", "Carries impulses from cell body", "Protects axon and accelerates impulse transmission");
+
+	createEntry("What is the function the myelin sheath in a nerve cell?", "Protects axon and accelerates impulse transmission", "To carry impulses to the body", "Produces neurotransmitter", "Carries impulses from cell body");
+
+	createEntry("What does a motor neuron do?", "Carries impulses from the central nervous system to the muscles and glands", "Carries impulses to the central nervous system from the sensory cells", "Links two neurons within the central system", "Nothing");
+	
+	createEntry("What does a sensory neuron do?", "Carries impulses to the central nervous system from the sensory cells","Carries impulses from the central nervous system to the muscles and glands",  "Links two neurons within the central system", "Nothing");
+
+	createEntry("What does a interneuron do?",  "Links two neurons within the central system", "Carries impulses from the central nervous system to the muscles and glands", "Carries impulses to the central nervous system from the sensory cells","Nothing");
+
+	createEntry("What is meant by a 'threshold' in regards to the human nervous system?", "The minimum strength of stimulus needed to generate an impulse", "The maximum strength of stimulus that can generate an impulse", "The distance between two neurons", "None of the above");
+	
+	createEntry("Name a disorder of the nervous system", "Parkinson's Disease", "AIDS", "Asthma", "Scurvy");
+	
+	createEntry("How can Parkinson's disease be treated?", "Drugs", "Prayer", "It cannot be treated", "Avoiding salty foods");
+	
+	createEntry("What causes Parkinson's disease?", "Lack of dopamine", "Lack of salt in the diet", "Poor diet and exercise", "Abstaining from sex");
+	
+	createEntry("What is the function of the meninges in the brain?", "Protection", "Vision, hearing, intelligence", "Secretes hormones", "Balance");
+
+	createEntry("What is the function of the cerebrum in the brain?", "Vision, hearing, intelligence","Protection",  "Secretes hormones", "Balance");
+
+	createEntry("What is the function of the cerebellum in the brain?", "Balance", "Protection", "Vision, hearing, intelligence", "Secretes hormones");
+
+	createEntry("What is the function of the hypothalamus in the brain?", "Osmoregulation", "Vision, hearing, intelligence", "Secretes hormones", "Breathing rate");
+
+	createEntry("What is the function of the medulla oblongata in the brain?", "Breathing rate", "Vision, hearing, intelligence", "Secretes hormones", "Balance");
+
+	createEntry("What is the function of the pituitary gland in the brain?", "Secretes hormones", "Protection", "Vision, hearing, intelligence", "Balance");
+
+	createEntry("What is a reflex action?", "An automatic response to a stimulus", "A concious response to a stimulus", "A random response from the body to no stimulus", "A random response from the body to a stimulus");
+	
+	createEntry("What is the purpose of reflex actions?", "Protection", "Reflex actions have no purpose", "To ease blood flow", "Digestion");
+	
+	createEntry("What is a synapse?", "The junction between neurons", "Part of a neuron responsible for transmission of dopamine", "Unused part of a neuron", "None of the above");
+	
+	createEntry("Select the correct order of stages from the synapse mechanism of action", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, neurotransmitter diffuses across the cleft, impulse generated in the next neuron, neurotransmitter broken down by and enzyme", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, impulse generated in the next neuron, neurotransmitter diffuses across the cleft, neurotransmitter broken down by and enzyme", "Vesicles release neurotransmitter, impulse generated in the next neuron, impulse arrives at synaptic knob, neurotransmitter diffuses across the cleft, neurotransmitter broken down by and enzyme", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, neurotransmitter broken down by and enzyme, impulse generated in the next neuron, neurotransmitter diffuses across the cleft");
+	
+	
 	
 	}
 	
