@@ -886,8 +886,47 @@ public class Database {
 
 	//Human Defence System
 	
+	createEntry("What is the function of the general defence system?", "Protects against all pathogens", "Protection against particular pathogens", "Egestion", "Excretion");
 	
+	createEntry("What is the role of the skin in the human defence system?", "The epidermis acts as barrier preventing entry of pathogens/Acid in sweat and sebum kills bacteria", "Mucus traps pathogens/Cilia moves mucus up and out", "HCl kills bacteria", "No role in the human defence system");
 
+	createEntry("What is the role of the mucus membrane lining in the human defence system?","Mucus traps pathogens/Cilia moves mucus up and out and HCl in the stomach kills bacteria", "The epidermis acts as barrier preventing entry of pathogens/Acid in sweat and sebum kills bacteria", "No role in the human defence system", "None of the above");
+	
+	createEntry("What are phagocytes?", "White blood cells", "Red blood cells", "Platelets", "Water");
+	
+	createEntry("What are the role of white blood cells", "To engulf and destroy pathogens in the body", "To carry oxygen around the body", "To clot the blood", "None of the above");
+	
+	createEntry("What is the function of the specific defence system?", "Immune system that protects against particular pathogens","Protects against all pathogens",  "Egestion", "Excretion");
+
+	createEntry("What are the organs of the immune system?", "Spleen, thymus, lymph nodes", "Live, spleen, lymph nodes", "Lymph nodes", "Spleen, thymus");
+	
+	createEntry("What is an antigen?", "A specific molecule that stiumlates the formation of antibodies", "A defence protein produced by lymphocytes in response to recognising an antigen", "A small quantity of a dead pathogen that is stimulates the formation of antibodes and memory cells", "None of the above");
+	
+	createEntry("What is an antibody?", "A defence protein produced by lymphocytes in response to recognising an antigen","A specific molecule that stiumlates the formation of antibodies",  "A small quantity of a dead pathogen that is stimulates the formation of antibodes and memory cells", "None of the above");
+
+	createEntry("What is a vaccine?", "A small quantity of a dead pathogen that is stimulates the formation of antibodes and memory cells","A defence protein produced by lymphocytes in response to recognising an antigen","A specific molecule that stiumlates the formation of antibodies",   "None of the above");
+
+	createEntry("What is induced immunity?", "The ability to resist disease caused by pathogens by the production of specific antibodies", "The ability to resist disease caused by pathogens by the production of specific vaccines", "The ability to resist disease caused by pathogens by the production of specific antigens", "None of the above");
+	
+	createEntry("What is active immunity?", "When a person makes antibodies in response to getting an infection or a vaccine - long lasting", "When antibodies are given to a person by injection or from mother to child via the placenta - short lasting", "None of the above", "When a person makes antibodies in response to getting an infection or a vaccine - short lasting");
+	
+	createEntry("What are lymphocytes (B and T cells) produced by?", "Lymph nodes", "Liver", "Pancreas", "Brain");
+	
+	createEntry("What do B cells do?", "Produce antibodies and memory cells", "Produce memory cells only", "Directly destroy infected cells", "Recognise antigens and release chemicals");
+	
+	createEntry("What are the different types of T cells?", "Helper T cells, Killer T cells, Supressor T cells, Memory T cells", "Helper T cells, Killer T cells, Supressor T cells", "Helper T cells, Killer T cells", "Helper T cells, Killer T cells, Supressor T cells, Memory T cells, Sleeper T cells");
+
+	createEntry("What is the function helper T cells?", "To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells", "To destroy infected cells directly", "To stop the activity of B cells and T cells (stop the immune resposne)", "To remember antigen and give future resistance");
+	
+	createEntry("What is the function killer T cells?", "To destroy infected cells directly","To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells",  "To stop the activity of B cells and T cells (stop the immune resposne)", "To remember antigen and give future resistance");
+
+	createEntry("What is the function suppressor T cells?", "To stop the activity of B cells and T cells (stop the immune resposne)","To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells", "To destroy infected cells directly",  "To remember antigen and give future resistance");
+
+	createEntry("What is the function memory T cells?", "To remember antigen and give future resistance", "To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells", "To destroy infected cells directly", "To stop the activity of B cells and T cells (stop the immune resposne)");
+
+	
+	
+	
 	}
 	
 	
