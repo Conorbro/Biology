@@ -828,8 +828,66 @@ public class Database {
 	
 	createEntry("Select the correct order of stages from the synapse mechanism of action", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, neurotransmitter diffuses across the cleft, impulse generated in the next neuron, neurotransmitter broken down by and enzyme", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, impulse generated in the next neuron, neurotransmitter diffuses across the cleft, neurotransmitter broken down by and enzyme", "Vesicles release neurotransmitter, impulse generated in the next neuron, impulse arrives at synaptic knob, neurotransmitter diffuses across the cleft, neurotransmitter broken down by and enzyme", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, neurotransmitter broken down by and enzyme, impulse generated in the next neuron, neurotransmitter diffuses across the cleft");
 	
+	//Human Senses & Endocrine System
+	
+	createEntry("What is the function of the iris in the eye?", "Controls the amount of light entering the eye", "Focuses light on the retina", "Holds lens in position", "Prevents reflection of light within the eye");
+	
+	createEntry("What is the function of the cornea in the eye?", "Focuses light", "Focuses light on the retina", "Holds lens in position", "Prevents reflection of light within the eye");
+
+	createEntry("What is the function of the sclera in the eye?", "Protection", "Focuses light on the retina", "Holds lens in position", "Prevents reflection of light within the eye");
+
+	createEntry("What is the function of the pupil in the eye?", "Lets light into the eye", "Focuses light on the retina", "Holds lens in position", "Prevents reflection of light within the eye");
+
+	createEntry("What is the function of the lens in the eye?", "Focuses light on the retina","Controls the amount of light entering the eye",  "Holds lens in position", "Prevents reflection of light within the eye");
+
+	createEntry("What is the function of the suspensory ligament in the eye?", "Holds lens in position","Controls the amount of light entering the eye", "Focuses light on the retina",  "Prevents reflection of light within the eye");
+
+	createEntry("What is the fovea in the eye?", "The point of sharpest vision", "Part that focuses light on the retina", "Part that holds lens in position", "Part that prevents reflection of light within the eye");
+
+	createEntry("What is the function of the choroid in the eye?", "Prevents reflection of light within the eye", "Controls the amount of light entering the eye", "Focuses light on the retina", "Holds lens in position");
+
+	createEntry("What is the function of the ear drum in the ear?", "Transfers sound vibrations to bones", "Links middle ear to throat and keeps air pressure equal on both sides of the ear drum", "Transfers vibrations to the inner ear", "Hearing");
+	
+	createEntry("What is the function of the eustachian tube in the ear?", "Links middle ear to throat and keeps air pressure equal on both sides of the ear drum","Transfers sound vibrations to bones",  "Transfers vibrations to the inner ear", "Hearing");
+
+	createEntry("What is the function of the cochela in the ear?", "Hearing", "Transfers sound vibrations to bones", "Links middle ear to throat and keeps air pressure equal on both sides of the ear drum", "Transfers vibrations to the inner ear");
+
+	createEntry("What is the function of the oval window in the ear?","Transfers vibrations to the inner ear", "Transfers sound vibrations to bones", "Links middle ear to throat and keeps air pressure equal on both sides of the ear drum",  "Hearing");
+
+	createEntry("What are the functions of the skin?", "Protection, sensory organ, excretion, temperature regulation", "Protection, excretion", "Excretion, temperature regulation, digestion", "Sensory organ, protection, excretion");
+	
+	createEntry("What hormones does the pituitary gland produce?", "TSH/ADH/FSH/LH", "Thyroxine", "Insulin", "Adrenaline");
+	
+	createEntry("What hormones does the thyroid produce?","Thyroxine", "TSH/ADH/FSH/LH",  "Insulin", "Adrenaline");
+
+	createEntry("What hormones does the pancreas produce?","Insulin", "TSH/ADH/FSH/LH", "Thyroxine",  "Adrenaline");
+
+	createEntry("What hormones does the adrenal gland produce?", "Adrenaline", "TSH/ADH/FSH/LH", "Thyroxine", "Insulin");
+
+	createEntry("What hormones do the ovaries produce?", "Oestrogen/Progesterone", "Thyroxine", "Insulin", "Adrenaline");
+
+	createEntry("What hormones do the testis gland produce?", "Testosterone", "Thyroxine", "Insulin", "Adrenaline");
+
+	createEntry("What is the endocrine gland and what does it do?", "A ductless gland that secretes hormones into the blood", "A gland that secretes hormones into the blood", "A part of the skin responsible for temperature regulation", "Ducted gland the secretes saliva");
+	
+	createEntry("What is a hormne?", "Chemical messenger secreted by the endocrine gland that causes a response in a target area", "Chemical messenger secreted by the exocrine gland that causes a response in a target area", "Chemical messenger secreted by the exocrine gland that regulates temperature", "None of the above");
+	
+	createEntry("What is the exocrine gland and what does it do?", "A ducted gland that carries secretions out, e.g. salivary gland, pancreas", "A gland that secretes hormones into the blood", "A part of the skin responsible for temperature regulation", "Ductless gland the secretes saliva");
+
+	createEntry("What is the function of thyroxine?", "Controls the rate of metabolism, growth and development", "Temperature regulation", "Immunity and protection", "Excretion and digestion");
+	
+	createEntry("What are the symptoms of thyroxine deficiency?", "Poor growth in children/Mental retardation in adults/Reduced resistance to disease", "Inability to regulate body temperature", "Mental retardation", "Swollen glands");
+	
+	createEntry("How can thyroxine deficiency be treated?", "Thyroxine tables", "Exercise", "Dieting", "It cannot be treated");
+	
+	createEntry("What are the symptoms of excess thyroxine?", "Swollen neck/Weight Loss/Restlessness", "Poor growth in children/Mental retardation in adults/Reduced resistance to disease", "Inability to regulate body temperature", "Mental retardation");
+	
+	createEntry("How can excessive thyroxine be treated?", "Remove the thyroid gland/Kill some cells" ,"Thyroxine tables",  "Dieting", "It cannot be treated");
+
+	//Human Defence System
 	
 	
+
 	}
 	
 	
