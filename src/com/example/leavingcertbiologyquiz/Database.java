@@ -924,8 +924,64 @@ public class Database {
 
 	createEntry("What is the function memory T cells?", "To remember antigen and give future resistance", "To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells", "To destroy infected cells directly", "To stop the activity of B cells and T cells (stop the immune resposne)");
 
+	//Growth response in flowering plants
 	
+	createEntry("What are the external factors relating to growth regulation in flowering plants?", "Light intensity, day length, gravity, temperature", "Light intensity, day length, gravity", "Day length, gravity", "Light intensity, day length, gravity, temperature, production of growth regulators");
 	
+	createEntry("What are the internal factors relating to growth regulation in flowering plants", "Production of growth regulators", "Light intensity", "Gravity", "Day length");
+	
+	createEntry("Where in the plant are growth regualtors produced?", "The meristematic system", "Roots", "Flower", "Leaves");
+	
+	createEntry("What growth regulators promote growth in flowering plants?", "Auxin", "Ethene", "Abscisic acid", "Ketamine");
+	
+	createEntry("Which of the following is NOT an effect of auxin?", "All answers are valid", "Stimulation of shoot and root growth", "Stimulates development of flowers and fruits", "Active in response to external stimuli");
+	
+	createEntry("Give an example of a commercial use of plant growing regulators", "Ethene in the banana ripening", "Auxin in pear ripening", "Abscisic acid in decontamination", "There are no commercial uses");
+	
+	createEntry("What is a tropism?", "A growth response of a plant to an external stimulus", "A growth response of a plant to an internal stimulus", "Any kind of a stimulus to a plant", "Any kind of a growth a plant incurs");
+	
+	createEntry("Why are tropisms important?", "They allow plants to have favourable conditions for growth", "They serve no purpose to plants", "They assist in reproduction", "They kill of old plants to make room for the new ones");
+	
+	createEntry("Which of the following is the tropism related to light?", "Phototropism", "Geotropism", "Thigmotropism", "Hydrotropism");
+	
+	createEntry("Which of the following is the tropism related to gravity?","Geotropism", "Phototropism",  "Thigmotropism", "Hydrotropism");
+
+	createEntry("Which of the following is the tropism related to touch?", "Thigmotropism","Phototropism", "Geotropism",  "Hydrotropism");
+
+	createEntry("Which of the following is the tropism related to water?", "Hydrotropism", "Phototropism", "Geotropism", "Thigmotropism");
+
+	createEntry("Which of the following is the tropism related to chemicals?", "Chemotropism", "Geotropism", "Thigmotropism", "Hydrotropism");
+
+	createEntry("Which of the following is a chemical adaptation of plants for protection?", "Production of toxic chemicals and heat-shock proteins", "Thick cuticle on stem and leaf", "Dormancy", "Stinging cells");
+	
+	createEntry("Which of the following is a structural adaptation of plants for protection?", "All answers are valid", "Thick cuticle on stem and leaf", "Dormancy", "Stinging cells");
+	
+	//Sexual Reproduction in Humans
+	
+	createEntry("What is the role of the Cowper's gland in the male reproductive system?", "Secretes seminal fluid", "Stores sperm", "Produces sperm and secretes testosterone", "Carries urine and semens");
+	
+	createEntry("What is the role of the epididymis in the male reproductive system?", "Stores sperm","Secretes seminal fluid",  "Produces sperm and secretes testosterone", "Carries urine and semens");
+
+	createEntry("What is the role of the testis in the male reproductive system?","Produces sperm and secretes testosterone", "Secretes seminal fluid", "Stores sperm",  "Carries urine and semens");
+
+	createEntry("What is the role of the Cowper's Gland in the male reproductive system?", "Carries urine and semens", "Secretes seminal fluid", "Stores sperm", "Produces sperm and secretes testosterone");
+
+	createEntry("what is the role of the uterus in the female reproductive system?", "Encloses the developing embryo", "Receieves semen", "Produces eggs by meiosis and secretes oestrogen and progesterone", "None of the above");
+
+	createEntry("what is the role of the vagina in the female reproductive system?", "Receieves semen","Encloses the developing embryo",  "Produces eggs by meiosis and secretes oestrogen and progesterone", "None of the above");
+
+	createEntry("what is the role of the ovaries in the female reproductive system?","Produces eggs by meiosis and secretes oestrogen and progesterone", "Encloses the developing embryo", "Receieves semen",  "None of the above");
+
+	createEntry("Which of the following is a secondary sexual characteristic in males?", "Deeping of voice", "Development of breasts", "Widening of the hips", "Production of breast milk");
+	
+	createEntry("Which of the following is a secondary sexual characteristic in females?","Widening of the hips", "Growth of facial hair", "Balls dropping", "Deeping of voice");
+
+	createEntry("Select the correct order of stages of the menstural cycle", "Graafian follicle develops in the ovary, Endometrium develops in the uterus, Ovulation occurs, Endometrium thickens, Corpus luteum breaks down in the ovary", "Endometrium develops in the uterus, Ovulation occurs, Graafian follicle develops in the ovary, Endometrium thickens, Corpus luteum breaks down in the ovary", "Graafian follicle develops in the ovary, Endometrium develops in the uterus, Endometrium thickens, Ovulation occurs, Corpus luteum breaks down in the ovary", "Graafian follicle develops in the ovary, Endometrium develops in the uterus, Corpus luteum breaks down in the ovary, Ovulation occurs, Endometrium thickens");
+	
+	createEntry("How many days does the menstural cycle typically take place over?", "28 days", "10 days", "7 days", "42 days");
+	
+	//Sexual Reproduction in Flowering Plants
+
 	
 	}
 	
