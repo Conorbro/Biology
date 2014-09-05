@@ -980,8 +980,99 @@ public class Database {
 	
 	createEntry("How many days does the menstural cycle typically take place over?", "28 days", "10 days", "7 days", "42 days");
 	
+	createEntry("Which of the following is NOT true about FSH?", "Stimulates the lining of the uterus to become thick and vascular", "Secreted by the pituitary gland", "Stimulates the development of the Graafian follicle", "Stimulates secretion of oestrogen by the follicle cells");
+	
+	createEntry("Which of the following is NOT a function of oestrogen?", "Stimulates the development of the Graafian follicle", "Stimulates the lining of the uterus to become thick and vascular", "Inhibits secretion of FSH", "Stimulates secretion of luteinising hormone (LH) by the pituitary gland");
+	
+	createEntry("Which of the following is NOT a function of progesterone? ?", "Stimulates the development of the Graafian follicle", "Maintains the thickening of the endometrium", "Inhibits secretion of FSH and LH", "All answers are valid");
+	
+	createEntry("Which of the following is NOT a function of luteinising hormone (LH)?", "Maintains the thickening of the endometrium", "Stimulates ovulation", "Stimulates development of he corpus luteum from the Graafian follicle", "Stiumlates the corpus luteum to secrete progesterone and oestrogen");
+	
+	createEntry("What happens hormonally if implantation does not occur?", "Levels of progesterone and oestrogen fall, pituitary gland secrets FSH - new cycle begins", "Levels of progesterone and oestrogen rise - new cycle begins", "Levels of progesterone rise, oestrogen levels fall - new cycle begins", "Levels of progesterone rise, oestrogen levels fall, FSH secreted from pituitary gland - new cycle begins");
+	
+	createEntry("How long can a sperm survive in the female?", "Up to 7 days", "24 hours", "30 minutes", "Up to 30 days");
+	
+	createEntry("How long can an egg survive after ovulation?", "Up to 24 hours","Up to 7 days", "Up to 30 minutes", "Up to 30 days");
+	
+	createEntry("What is copulation?", "Sexual intercourse", "Fertilisation", "Germination", "Implantation");
+	
+	createEntry("What is fertilisation?", "Fusion of haploid nuclei of sperm and egg to form a diploid zygote in the fallopian tube", "Fusion of haploid nuclei of sperm and egg to form a haploid zygote in the uterus", "Fusion of diploid nuclei of sperm and egg to form a diploid zygote in the ovaries", "Fusion of diploid nuclei of sperm and egg to form a diploid zygote in the fallopian tube");
+	
+	createEntry("How does pregnancy affect the menstural cycle?", "It stops the menstural cycle", "It accelerates the menstural cycle", "It has no effect on the menstural cycle", "It slows down the menstural cycle");
+	
+	createEntry("What is implantation?", "The embedding of the blastocyst in the endometrium 7 days after fertilisation", "Fusion of haploid nuclei of sperm and egg to form a diploid zygote in the fallopian tube", "The movement of the female egg from ovary to uterus", "None of the above");
+	
+	createEntry("Which of the following primary germ layers gives rise to the skin and nervous system?", "Ectoderm", "Mesoderm", "Endoderm", "None of the above");
+	
+	createEntry("Which of the following primary germ layers gives rise to the muscle, skeletal and reproductive sysem?","Mesoderm", "Ectoderm",  "Endoderm", "None of the above");
+
+	createEntry("Which of the following primary germ layers gives rise to the gut linig and liver?","Endoderm", "Ectoderm", "Mesoderm",  "None of the above");
+
+	createEntry("What is the amnion?", "A fluid-filled sac or membrane that encloses and protects the embryo", "Connects the placenta to the embryo", "Part of the ovaries responsible for hormone secretion", "None of the above");
+	
+	createEntry("What forms the placenta?", "Tissues in the embryo and uterus", "Tissues from the ovaries and vagina", "Tissues from the fallopian tubes", "Hormonal residue");
+	
+	createEntry("What does the umbilical cord do?", "Connects the placenta to the embryo", "Nothing", "Secretes hormones", "Forms the placenta");
+	
+	createEntry("Which of the following is a function of the placenta?", "All answers are valid", "Transfer of food, gases, excretory products between embryo and mother", "Prevents transfer of pathogens, blood cells and hormones", "Secretes the hormones progesterone and oestrogen");
+	
+	createEntry("What hormone induces labour?", "Oxytocin", "Oestrogen", "LH", "FSH");
+	
+	createEntry("What does oxytocin do?", "Stimulates contractions of the muscles of the uterus, cervix dialtes and amnion bursts", "Causes ovulation and implantation to occur", "Stimulates fertilisation, causes amnion to burst", "Infertility in males");
+	
+	createEntry("Which hormone stimulates lactation?", "Prolactin", "Oxytocin", "LH", "FSH");
+	
+	createEntry("Which of the following is a benefit of breast-feeding?", "All answers are valid", "Provides baby with the correct nutrients", "Contains antibodies", "Helps the uterus to contrac");
+	
+	createEntry("Name a cause of male infertility", "Low sperm count", "High sperm count", "High libido", "Low libido");
+	
+	createEntry("Name a cause of female infertility", "Failure to ovulate", "High egg count", "Drinking too much milk", "None of the above");
+	
+	createEntry("How can infertility be treated in both males and females?", "In-vitro fertilisation", "It cannot be treated", "Drugs", "Hormone treatment");
+	
+	createEntry("Name a disorder of the menstural cycle", "Fibrosis", "Erectile disfunction", "AIDS", "Asthma");
+	
+	createEntry("How can fibrosis be treated?", "Hormones and/or surgery", "Dieting", "Exercise", "It cannot be treated");
+	
+	createEntry("What causes fibrosis?", "Unkown cause - may be hormonal", "Poor diet", "Lack of exercise", "Uterus infections");
+	
+	
+	
 	//Sexual Reproduction in Flowering Plants
 
+	createEntry("What is pollination?", "The transfer of pollen from anther to stigma", "The transfer of pollen from stigma to anther", "Mitosis occuring in a plant", "Fertilisation");
+	
+	createEntry("What is self-polination?", "When pollen grains are transferred onto the stigma of the same flower or onto another flower on the same plant", "When pollen grains are transferred onto the stigma of a flower on another plant of the same species", "Fertilisation", "None of the above");
+	
+	createEntry("What is cross-polination?", "When pollen grains are transferred onto the stigma of a flower on another plant of the same species","When pollen grains are transferred onto the stigma of the same flower or onto another flower on the same plant",  "Fertilisation", "None of the above");
+
+	createEntry("What carries out cross-pollination?", "Insects and the wind", "Rocks and stones", "Clouds and rain water", "Lava and magma");
+	
+	createEntry("Select the correct order of stages for seed formation", "Post fertilisation, zygote forms seed embryo, edosperm nucleus forms endosperm, ovule develops into a seed/integuments form the testa, seed dries out, becomes dormant","Post fertilisation, edosperm nucleus forms endosperm, zygote forms seed embryo, ovule develops into a seed/integuments form the testa, seed dries out, becomes dormant","Post fertilisation, zygote forms seed embryo, ovule develops into a seed/integuments form the testa, edosperm nucleus forms endosperm, seed dries out, becomes dormant","Post fertilisation, zygote forms seed embryo, edosperm nucleus forms endosperm, seed dries out, becomes dormant, ovule develops into a seed/integuments form the testa");
+	
+	createEntry("What is the difference between edospermic seeds and non-endospermic seeds?", "Food is stored in the endosperm in endospermic seeds and is stored in the cotyledons in non-endospermic seeds", "Food is stored in the non-endosperm in endospermic seeds and is stored in the cotyledons in endospermic seeds", "There is no difference", "Endospermic seeds have no cotyledon where as non-endospermic seeds do");
+	
+	createEntry("What is fruit?", "A mature ovary containing seeds", "Part of the roots responsible for water absorbtion", "Part of the leaves responsible for transpiration", "None of the above");
+	
+	createEntry("What are the functions of fruit?", "Seed protection and to disperse seeds away from the parent plant", "Water absorbtion and transport", "Transpiration", "Gas exchange");
+	
+	createEntry("Why is seed dispersal important for a plant?", "Reduce competition space and increase survival of the species", "To see if the species can survive in different locations", "Evolution", "Seed dispersal is not important to most plants");
+	
+	createEntry("What method of seed dispersal does a pea use?", "Mechanical/Self-dispersal", "Wind dispersal", "Animal dispersal", "Water dispersal");
+	
+	createEntry("What method of seed dispersal does a dandelion use?","Wind dispersal", "Mechanical/Self-dispersal",  "Animal dispersal", "Water dispersal");
+
+	createEntry("What method of seed dispersal does a raspberry use?", "Animal dispersal","Mechanical/Self-dispersal", "Wind dispersal",  "Water dispersal");
+
+	createEntry("What method of seed dispersal does a water-lilly use?", "Water dispersal", "Mechanical/Self-dispersal", "Wind dispersal", "Animal dispersal");
+
+	createEntry("What is dormancy in relation to seeds?", "Germination will not occur even if conditions are suitable", "Germination will only occur if conditions are suitable", "Germination will only occur if conditions are unsuitable", "Germination will occur regardless of conditions");
+	
+	createEntry("What are the advantages of dormancy?", "To prevent germination at the wrong time of year and to allow time for greater dispersal", "There is no advantages to dormancy", "Dormancy forces the seed to only germinate once conditions are suitable", "None of the above");
+	
+	createEntry("What is germination?", "When the embryo of a seed begins to grow again", "When an ovary matures and contains seeds", "Fertilisation", "None of the above");
+	
+	createEntry("What conditions are required for germination to occur?", "All answers are valid", "Water", "Oxygen", "Suitable temperature");
 	
 	}
 	
