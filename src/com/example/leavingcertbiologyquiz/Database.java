@@ -17,7 +17,7 @@ public class Database {
 	public static final String KEY_ANSWER3 = "ans3";
 
 	
-	private static final String DATABASE_NAME = "QnAdb"; //Database name
+	public static final String DATABASE_NAME = "QnAdb"; //Database name
 	private static final String DATABASE_TABLE = "QnA_table"; //Table holds 3 values above^
 	private static final int DATABASE_VERSION = 1; //
 	
