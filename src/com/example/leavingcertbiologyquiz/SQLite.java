@@ -92,6 +92,7 @@ public class SQLite extends Activity implements OnClickListener{
 		 try{
 			String s = sqlRow.getText().toString();
 			long l = Long.parseLong(s); //Converts string to long
+			
 			Database Db = new Database(this);
 			Db.open();
 			String returnedQuestion = Db.getQuestion(l);

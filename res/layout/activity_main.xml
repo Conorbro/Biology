@@ -18,8 +18,8 @@
 	        android:id="@+id/QuestionNumberView"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/button1"
-	        android:layout_below="@+id/button1"
+	        android:layout_alignLeft="@+id/bheart"
+	        android:layout_below="@+id/bheart"
 	        android:text="TextView"
 	        android:textColor="#FFFFFF" />
 
@@ -35,7 +35,7 @@
 	        android:textColor="#FFFFFF" />
 
 	    <Button
-	        android:id="@+id/button1"
+	        android:id="@+id/bheart"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/radioGroup1"
@@ -50,7 +50,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_above="@+id/AnswerDisplay"
 	        android:layout_alignRight="@+id/QuestionNumberView"
-	        android:layout_alignTop="@+id/button1"
+	        android:layout_alignTop="@+id/bheart"
 	        android:layout_marginRight="25dp"
 	        android:src="@drawable/face2" />
 

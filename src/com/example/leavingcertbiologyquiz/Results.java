@@ -35,14 +35,20 @@ public class Results extends Activity{
 	
 	protected void onCreate(Bundle savedInstanceState){
 		
-		total = 5;
+		
+		
+		
+//		total = 5;
 		value = 0;
 		new_quiz = (Button)findViewById(R.id.bnewquiz2);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.results);
 		score_display = (TextView)findViewById(R.id.tvscore);
 		faceView = (ImageView)findViewById(R.id.ivface2);		
-	
+		
+		Intent nIntent = getIntent();
+		total = nIntent.getIntExtra("total", 1);
+
 		showScore();
 		//	init();
 	}

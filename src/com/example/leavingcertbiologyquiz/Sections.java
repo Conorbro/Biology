@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class Sections extends Activity {
 
@@ -20,7 +22,20 @@ public class Sections extends Activity {
 	private Button dna;
 	private Button bacteria;
 	private Button plants;
+	private Button heart;
+	private Button nutrition_excretion;
+	private Button nervous;
+	private Button senses;
+	private Button defence;
+	private Button humanrepro;
+	private Button plantrepro;
+	private Button growthresponse;
 	
+	private int numberQuestions;
+	private RadioButton number_of_questions;
+	
+	private RadioGroup group;
+
 	
 	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 
@@ -42,6 +57,16 @@ public class Sections extends Activity {
 		dna = (Button)findViewById(R.id.bdna);
 		bacteria = (Button)findViewById(R.id.bmicro);
 		plants = (Button)findViewById(R.id.bplantsstructure);
+		heart =(Button)findViewById(R.id.bheart);
+		nutrition_excretion =(Button)findViewById(R.id.bnutrition);
+		nervous =(Button)findViewById(R.id.bskeleton);
+		senses =(Button)findViewById(R.id.bsense);
+		defence =(Button)findViewById(R.id.bdefence);
+		humanrepro =(Button)findViewById(R.id.breproduction);
+		plantrepro =(Button)findViewById(R.id.bplantrepro);
+		growthresponse =(Button)findViewById(R.id.bgrowthresponse);
+		
+		group = (RadioGroup)findViewById(R.id.radioGroup2);
 		
 		food.setOnClickListener(new OnClickListener() {
 			@Override
@@ -55,7 +80,7 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(78, 30);
+				startQuiz(78, 31);
 			}});
 		
 
@@ -70,14 +95,14 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(117,95);
+				startQuiz(117,96);
 			}});
 		
 		enzymes.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(137, 117);
+				startQuiz(137, 118);
 			
 			}});
 		
@@ -85,7 +110,7 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(190, 137);
+				startQuiz(190, 138);
 			
 			}});
 		
@@ -93,7 +118,7 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(221, 190);
+				startQuiz(221, 189);
 			
 			}});
 		
@@ -101,17 +126,79 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(247, 221);
+				startQuiz(245, 222);
 			
 			}});
+		
+		heart.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(269, 246);
+			
+			}});
+		
+		nutrition_excretion.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(313, 270);
+			
+			}});
+		nervous.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(359, 314);
+			
+			}});
+		senses.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(385, 360);
+			
+			}});
+		defence.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(404, 386);
+			}});
+		growthresponse.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(419, 405);				
+			}});
+		humanrepro.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(458, 420);
+			
+			}});
+		plantrepro.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				sp.play(soundId, 1, 1, 0, 0, 1);
+				startQuiz(475, 459);
+			
+			}});
+	
 		
 	}
 	
 	public void startQuiz(int max, int min){
 		
+		number_of_questions=(RadioButton)findViewById(group.getCheckedRadioButtonId());
+
+		
 		Intent i = new Intent(Sections.this, MainActivity.class);
 		i.putExtra("max", max);
 		i.putExtra("min", min);
+		numberQuestions = Integer.parseInt(number_of_questions.getText().toString());
+		i.putExtra("numberQuestions", numberQuestions);
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
 		

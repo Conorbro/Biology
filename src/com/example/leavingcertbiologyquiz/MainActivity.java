@@ -32,13 +32,15 @@ public class MainActivity extends Activity {
 	private TextView answerView; //Show Answer Text
 	private TextView questionNumberView; //Displays Question number
 	private RadioButton answer;	
-	public int max, min, value, x;
+	public int max, min, value, x, numberQuestions;
 	public int questionNum;
 	public int score;
 	public String returnedAnswer;
 	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 	public ImageView imageView, faceView;
 	public Drawable image, faceImage;
+	
+	
 	
 	public int images[] = {			
 		R.drawable.ecology,
@@ -66,7 +68,7 @@ public class MainActivity extends Activity {
 		x = 0;
 		questionNum = 0;
 		currentQuestion = 0;
-		questionButton = (Button)findViewById(R.id.button1);
+		questionButton = (Button)findViewById(R.id.bheart);
 		questionView = (TextView)findViewById(R.id.QuestionTextView);
 		answerView = (TextView)findViewById(R.id.AnswerDisplay);
 		questionNumberView = (TextView)findViewById(R.id.QuestionNumberView);
@@ -78,6 +80,7 @@ public class MainActivity extends Activity {
 		Intent mIntent = getIntent();
 		max = mIntent.getIntExtra("max", 0);
 		min = mIntent.getIntExtra("min", 0);
+		numberQuestions = mIntent.getIntExtra("numberQuestions", 0);
 
 		answerView.setText(" ");
 
@@ -102,7 +105,7 @@ public class MainActivity extends Activity {
 	
 	public void showQuestionNumber()		//Displays current question number 
 	{
-		questionNumberView.setText("Question " + String.valueOf(currentQuestion));
+		questionNumberView.setText("Question " + String.valueOf(currentQuestion) + "/" + numberQuestions);
 	}
 	
 	public void showQuestion() //Checks answer of previously answered question
@@ -134,7 +137,7 @@ public class MainActivity extends Activity {
 	}
 	
 	
-	else if(questionNum==4){
+	else if(questionNum==(numberQuestions-1)){
 		
 		getResults();
 		
@@ -254,6 +257,7 @@ public class MainActivity extends Activity {
 		questionNum = 0;
 		Intent i = new Intent(getApplicationContext(), Results.class);
 		i.putExtra("Score", score);
+		i.putExtra("total", numberQuestions);
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
 		finish();

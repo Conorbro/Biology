@@ -148,7 +148,7 @@ public class Database {
 
 	createEntry("Role of iron in animals", "Formation of haemoglobin", "Formation of skin and hair", "Formation of bones and teeth", "Formation of claws and nails");
 
-	//2.Ecology (48) 
+	//2.Ecology (48) (31)
 	
 	createEntry("Ecology is defined as…", "The study of the relationships of living organisms with each other and with their abiotic environment", "The place where an organism lives", "A group of different species sharing the same resources", "The part of the earth where organisms can live");
 
@@ -592,7 +592,7 @@ public class Database {
 	
 	createEntry("What do guard cells do?", "They control the opening and closing of the stomata in leaves", "They regulate the entry of water through the root hairs", "They prevent the leakage of H2O and minerals from the xylem and phloem in the stem", "All answers are valid");
 	
-	//The Heart and Circulatory system (247)
+	//The Heart and Circulatory system (245)
 	
 	createEntry("In blood, plasma is...", "The liquid part of blood", "Colourless, nucleus containing cell that defends against disease" , "No nucleus, cell fragments that clot the blood", "Bi-concave, haemoglobin containing, no nucleus or mitochondria cell that transports O2");
 	
@@ -644,7 +644,7 @@ public class Database {
 	
 	createEntry("What are the functions of the lymphatic system?", "Transport of tissue fluid to return it to the blood and defence against disease", "To regulate body temperature", "To optimise enzyme action", "To assist in digestion");
 	
-	//Human Nutrition and Human Excretion (272)
+	//Human Nutrition and Human Excretion (270)
 	
 	createEntry("Select the correct order of stages of human nutrition", "Ingestion, Digestion, Absorption, Egestion", "Egestion, Absorption, Digestion, Ingestion", "Absorption, Digestion, Egestion, Ingestion", "Egestion, Absorption, Ingestion, Digestion");
 	
@@ -734,7 +734,7 @@ public class Database {
 	
 	createEntry("What is homeostasis?", "Keeping a constant internal environment in the body to allow cells to carry out normal metabolic activities", "", "", "");
 	
-	//Human musculoskeletal system + Human nervous system (316)
+	//Human musculoskeletal system + Human nervous system (314)
 	
 	createEntry("What are the functions of the skeleton?", "Support, protection, movement", "Movement, growth, protection", "Support and protection", "Growth and Support");
 	
@@ -828,7 +828,7 @@ public class Database {
 	
 	createEntry("Select the correct order of stages from the synapse mechanism of action", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, neurotransmitter diffuses across the cleft, impulse generated in the next neuron, neurotransmitter broken down by and enzyme", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, impulse generated in the next neuron, neurotransmitter diffuses across the cleft, neurotransmitter broken down by and enzyme", "Vesicles release neurotransmitter, impulse generated in the next neuron, impulse arrives at synaptic knob, neurotransmitter diffuses across the cleft, neurotransmitter broken down by and enzyme", "Impulse arrives at synaptic knob, vesicles release neurotransmitter, neurotransmitter broken down by and enzyme, impulse generated in the next neuron, neurotransmitter diffuses across the cleft");
 	
-	//Human Senses & Endocrine System
+	//Human Senses & Endocrine System (360)
 	
 	createEntry("What is the function of the iris in the eye?", "Controls the amount of light entering the eye", "Focuses light on the retina", "Holds lens in position", "Prevents reflection of light within the eye");
 	
@@ -884,7 +884,7 @@ public class Database {
 	
 	createEntry("How can excessive thyroxine be treated?", "Remove the thyroid gland/Kill some cells" ,"Thyroxine tables",  "Dieting", "It cannot be treated");
 
-	//Human Defence System
+	//Human Defence System (386)
 	
 	createEntry("What is the function of the general defence system?", "Protects against all pathogens", "Protection against particular pathogens", "Egestion", "Excretion");
 	
@@ -924,7 +924,7 @@ public class Database {
 
 	createEntry("What is the function memory T cells?", "To remember antigen and give future resistance", "To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells", "To destroy infected cells directly", "To stop the activity of B cells and T cells (stop the immune resposne)");
 
-	//Growth response in flowering plants
+	//Growth response in flowering plants (405)
 	
 	createEntry("What are the external factors relating to growth regulation in flowering plants?", "Light intensity, day length, gravity, temperature", "Light intensity, day length, gravity", "Day length, gravity", "Light intensity, day length, gravity, temperature, production of growth regulators");
 	
@@ -956,7 +956,7 @@ public class Database {
 	
 	createEntry("Which of the following is a structural adaptation of plants for protection?", "All answers are valid", "Thick cuticle on stem and leaf", "Dormancy", "Stinging cells");
 	
-	//Sexual Reproduction in Humans
+	//Sexual Reproduction in Humans (420)
 	
 	createEntry("What is the role of the Cowper's gland in the male reproductive system?", "Secretes seminal fluid", "Stores sperm", "Produces sperm and secretes testosterone", "Carries urine and semens");
 	
@@ -1038,7 +1038,7 @@ public class Database {
 	
 	
 	
-	//Sexual Reproduction in Flowering Plants
+	//Sexual Reproduction in Flowering Plants (459)
 
 	createEntry("What is pollination?", "The transfer of pollen from anther to stigma", "The transfer of pollen from stigma to anther", "Mitosis occuring in a plant", "Fertilisation");
 	
@@ -1073,6 +1073,8 @@ public class Database {
 	createEntry("What is germination?", "When the embryo of a seed begins to grow again", "When an ovary matures and contains seeds", "Fertilisation", "None of the above");
 	
 	createEntry("What conditions are required for germination to occur?", "All answers are valid", "Water", "Oxygen", "Suitable temperature");
+	
+	//(475)
 	
 	}
 	
