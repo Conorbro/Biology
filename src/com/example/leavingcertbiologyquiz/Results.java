@@ -23,7 +23,8 @@ public class Results extends Activity{
 	private ImageView faceView;
 	private Drawable face;
 	private Button new_quiz;
-	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
+	
+	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 
 	private int images[] = {			
 			R.drawable.face_shocked,
@@ -34,35 +35,30 @@ public class Results extends Activity{
 	};
 	
 	protected void onCreate(Bundle savedInstanceState){
-		
-		
-		
-		
-//		total = 5;
-		value = 0;
-		new_quiz = (Button)findViewById(R.id.bnewquiz2);
+				
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.results);
-		score_display = (TextView)findViewById(R.id.tvscore);
-		faceView = (ImageView)findViewById(R.id.ivface2);		
 		
+
 		Intent nIntent = getIntent();
 		total = nIntent.getIntExtra("total", 1);
-
+		init();
 		showScore();
-		//	init();
+		
 	}
 	
 	
 	public void init(){
-		
+		new_quiz = (Button)findViewById(R.id.bnewquiz2);
+		score_display = (TextView)findViewById(R.id.tvscore);
+		faceView = (ImageView)findViewById(R.id.ivface2);	
 		final int soundId = sp.load(this, R.raw.click, 1); 
 
 		new_quiz.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-			//	openSections();
+				newQuiz();
 				
 			}});
 		
@@ -86,12 +82,12 @@ public class Results extends Activity{
 		System.out.println("Value = " + value);
 		System.out.println("Total = " + total);
 		
-		if(value<5){
+		if(value<total){
 		score_display.setText(value2 + "/" + total);
 		}
 		
 		else{
-		score_display.setText(value2 + "/" + total + "Perfect!");	
+		score_display.setText(value2 + "/" + total + " Perfect!");	
 		}
 		
 		if(percentage<20){
@@ -119,12 +115,22 @@ public class Results extends Activity{
 		
 	}
 	
-//	public void openSections(){
-//		
-//		Intent i = new Intent("android.intent.action.SECTIONS");
-//		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
-//		startActivity(i, bndlanimation);
-//	}
+	public void newQuiz(){
+		
+	Intent i = new Intent("android.intent.action.SECTIONS");
+	Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+	startActivity(i, bndlanimation);
+	
+	}
+	
+	public void mainMenu(){
+		
+	Intent i = new Intent("android.intent.action.MAIN");
+	Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+	startActivity(i, bndlanimation);	
+		
+		
+	}
 	
 	
 }

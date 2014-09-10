@@ -5,17 +5,19 @@
 
     <TextView
         android:id="@+id/textView1"
+        style="@style/button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:textColor="#FFFFFF"
-        android:text="Results"
+        android:text="Results:"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/tvscore"
+        style="@style/button_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -30,17 +32,31 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/tvscore"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/face_neutral" />
 
     <Button
         android:id="@+id/bnewquiz2"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivface2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/button"
+        android:text="New Quiz!"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bmainmenu"
+        style="@style/button_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/ivface2"
-        android:layout_marginTop="73dp"
-        android:textColor="#FFFFFF"
-        android:text="New Quiz!" />
+        android:layout_below="@+id/bnewquiz2"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button"
+        android:text="Main Menu"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

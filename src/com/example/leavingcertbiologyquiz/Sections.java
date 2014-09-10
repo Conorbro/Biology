@@ -73,7 +73,7 @@ public class Sections extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(30, 0);
+				startQuiz(30, 1);
 			}});
 				
 		ecology.setOnClickListener(new OnClickListener() {
@@ -156,33 +156,33 @@ public class Sections extends Activity {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(385, 360);
+				startQuiz(386, 360);
 			
 			}});
 		defence.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(404, 386);
+				startQuiz(405, 387);
 			}});
 		growthresponse.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(419, 405);				
+				startQuiz(421, 406);				
 			}});
 		humanrepro.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(458, 420);
+				startQuiz(460, 422);
 			
 			}});
 		plantrepro.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				sp.play(soundId, 1, 1, 0, 0, 1);
-				startQuiz(475, 459);
+				startQuiz(477, 461);
 			
 			}});
 	

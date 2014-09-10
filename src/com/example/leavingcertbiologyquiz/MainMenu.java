@@ -16,7 +16,7 @@ import android.widget.Button;
 public class MainMenu extends Activity {
 
 	
-	private Button database;
+//	private Button database;
 	private Button sectionQuiz;
 
 	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
@@ -32,12 +32,11 @@ public class MainMenu extends Activity {
 	
 	public void init(){
 		final int soundId = sp.load(this, R.raw.click, 1); 
-		database = (Button)findViewById(R.id.bdatabase);
+//		database = (Button)findViewById(R.id.bdatabase);
 		sectionQuiz = (Button)findViewById(R.id.bsection);
 
-		//Makes the database if it is not already there
-//		String s = "1";
-//		long l = Long.parseLong(s); //Converts string to long
+		//Creates the database if it is not already there
+
 		if(doesDatabaseExist(this, Database.DATABASE_NAME)==false){	
 			Database Db = new Database(this);
 			Db.open();
@@ -46,14 +45,14 @@ public class MainMenu extends Activity {
 
 		}
 			
-		database.setOnClickListener(new OnClickListener(){
-			
-			
-			public void onClick(View v){
-				sp.play(soundId, 1, 1, 0, 0, 1);
-				openDatabase();
-				
-		}});
+//		database.setOnClickListener(new OnClickListener(){
+//			
+//			
+//			public void onClick(View v){
+//				sp.play(soundId, 1, 1, 0, 0, 1);
+//				openDatabase();
+//				
+//		}});
 		
 		
 		sectionQuiz.setOnClickListener(new OnClickListener(){

@@ -884,7 +884,7 @@ public class Database {
 	
 	createEntry("How can excessive thyroxine be treated?", "Remove the thyroid gland/Kill some cells" ,"Thyroxine tables",  "Dieting", "It cannot be treated");
 
-	//Human Defence System (386)
+	//Human Defence System (387)
 	
 	createEntry("What is the function of the general defence system?", "Protects against all pathogens", "Protection against particular pathogens", "Egestion", "Excretion");
 	
@@ -924,7 +924,7 @@ public class Database {
 
 	createEntry("What is the function memory T cells?", "To remember antigen and give future resistance", "To recognise antigens and release chemicals that stimulate the production of B cells and killer T cells", "To destroy infected cells directly", "To stop the activity of B cells and T cells (stop the immune resposne)");
 
-	//Growth response in flowering plants (405)
+	//Growth response in flowering plants (406)
 	
 	createEntry("What are the external factors relating to growth regulation in flowering plants?", "Light intensity, day length, gravity, temperature", "Light intensity, day length, gravity", "Day length, gravity", "Light intensity, day length, gravity, temperature, production of growth regulators");
 	
@@ -956,7 +956,9 @@ public class Database {
 	
 	createEntry("Which of the following is a structural adaptation of plants for protection?", "All answers are valid", "Thick cuticle on stem and leaf", "Dormancy", "Stinging cells");
 	
-	//Sexual Reproduction in Humans (420)
+	createEntry("Where is auxin produced?", "The shoot tip", "The roots", "Leaves", "Flower");
+	
+	//Sexual Reproduction in Humans (422)
 	
 	createEntry("What is the role of the Cowper's gland in the male reproductive system?", "Secretes seminal fluid", "Stores sperm", "Produces sperm and secretes testosterone", "Carries urine and semens");
 	
@@ -1038,7 +1040,7 @@ public class Database {
 	
 	
 	
-	//Sexual Reproduction in Flowering Plants (459)
+	//Sexual Reproduction in Flowering Plants (461)
 
 	createEntry("What is pollination?", "The transfer of pollen from anther to stigma", "The transfer of pollen from stigma to anther", "Mitosis occuring in a plant", "Fertilisation");
 	
@@ -1074,7 +1076,7 @@ public class Database {
 	
 	createEntry("What conditions are required for germination to occur?", "All answers are valid", "Water", "Oxygen", "Suitable temperature");
 	
-	//(475)
+	//(477) total questions
 	
 	}
 	

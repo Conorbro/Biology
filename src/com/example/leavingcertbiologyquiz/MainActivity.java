@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 	public SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 	public ImageView imageView, faceView;
 	public Drawable image, faceImage;
-	
+	public int[] questions;
 	
 	
 	public int images[] = {			
@@ -64,6 +64,7 @@ public class MainActivity extends Activity {
 	{
 
 		final int soundId = sp.load(this, R.raw.click, 1);
+		questions = new int[16];
 		score = 0;
 		x = 0;
 		questionNum = 0;
@@ -106,6 +107,13 @@ public class MainActivity extends Activity {
 	public void showQuestionNumber()		//Displays current question number 
 	{
 		questionNumberView.setText("Question " + String.valueOf(currentQuestion) + "/" + numberQuestions);
+		
+		if(currentQuestion==numberQuestions){
+			
+			questionButton.setText("Finish");
+			
+		}
+		
 	}
 	
 	public void showQuestion() //Checks answer of previously answered question
@@ -151,17 +159,6 @@ public class MainActivity extends Activity {
 	
 	public void questionView(){ //Loads up next question
 		
-//		questionNum++;
-		
-//		if(questionNum>5){		//When questions answered, show results
-//						
-//			questionNum = 0;
-//			Intent i = new Intent(getApplicationContext(), Results.class);
-//			i.putExtra("Score", score);
-//			Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
-//			startActivity(i, bndlanimation);
-//			finish();
-//		}
 		
 		List<Button> buttons = new ArrayList<Button>();
 		
@@ -170,28 +167,35 @@ public class MainActivity extends Activity {
 	    buttons.add((Button)findViewById(R.id.radioButton3));
 	    buttons.add((Button)findViewById(R.id.radioButton4));
 		
-	//	Random rand = new Random();
+	    currentQuestion++;
+	    
+	    //Generate random value of x
+	    x = rand(max, min);
+		boolean duplicate = false, added = false;
+	    int j = 0;
 		
+//	while(added==false){ //While new question has not been added loop through questions checking for duplicate
+	    for(j=0; j<currentQuestion; j++){
+	    	
+	    	if(questions[j]==x){ //If duplicate found, generate new x, leave for loop, start over
+	    		duplicate = true;
+	    		x = rand(max, min);
+	    		j=-1;
+	    	}
+	    	
+	    }
 		
-		int y = x;
-		
-	//if(max!=0){
-	//	 x = rand.nextInt(max - min) + min;
-
-		x = rand(max, min);
-		
-		while(x==y){
-			
-			x = rand(max,min);
-			
-		}
-		
-//	}
-	
-	//else {	 //x = rand.nextInt(120) + 1;
-	
+	 //   if(duplicate==false){ //If no duplicate, add to array and exit loop
+	    	
+	    	added = addToArray(x,currentQuestion-1);
+	    	
+	//    }
+	    
+	   
+	    
 	//}
-		currentQuestion++;
+
+		
 		Database Dbb = new Database(this);
 		Dbb.open();
 		String returnedQuestion = Dbb.getQuestion(x);
@@ -262,6 +266,12 @@ public class MainActivity extends Activity {
 		startActivity(i, bndlanimation);
 		finish();
 		
+	}
+	
+	public boolean addToArray(int x, int space){
+		
+		questions[space] = x;
+		return true;
 	}
 	
 }

@@ -26,6 +26,8 @@
 
         <Button
             android:id="@+id/bfood"
+			style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="188dp"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -36,6 +38,8 @@
 
         <Button
             android:id="@+id/bcell"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="188dp"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -45,27 +49,9 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/bcellcontinuity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_gravity="fill_horizontal|top"
-            android:layout_row="1"
-            android:text="4. Cell Continuity"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/bdna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_gravity="fill_horizontal|top"
-            android:layout_row="2"
-            android:text="6. DNA/Evolution"
-            android:textColor="#FFFFFF" />
-
-        <Button
             android:id="@+id/benzymes"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="188dp"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -99,32 +85,14 @@
         <Space />
 
         <Button
-            android:id="@+id/becology"
-            android:layout_width="185dp"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_gravity="fill_horizontal|top"
-            android:layout_row="0"
-            android:text="2. Ecology"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/bplantsstructure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_gravity="fill_horizontal|fill_vertical"
-            android:layout_row="3"
-            android:text="8. Plant Structure"
-            android:textColor="#FFFFFF" />
-
-        <Button
             android:id="@+id/bmicro"
+            style="@style/button_text2"
             android:layout_width="188dp"
-            android:layout_height="61dp"
+            android:layout_height="64dp"
             android:layout_column="0"
             android:layout_gravity="left|top"
             android:layout_row="3"
+            android:background="@drawable/button"
             android:text="7. Microorganisms/Fungi"
             android:textColor="#FFFFFF" />
 
@@ -162,6 +130,8 @@
 
         <Button
             android:id="@+id/bheart"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="188dp"
             android:layout_column="0"
             android:layout_gravity="left|top"
@@ -171,13 +141,18 @@
 
         <Button
             android:id="@+id/bskeleton"
+            style="@style/button_text2"
             android:layout_width="188dp"
+            android:layout_height="63dp"
             android:layout_gravity="fill_horizontal"
+            android:background="@drawable/button"
             android:text="11. Skeletal/Nervous System"
             android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/bdefence"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="188dp"
             android:layout_gravity="left"
             android:text="13. Defence System"
@@ -188,27 +163,21 @@
         <Space />
 
         <Button
-            android:id="@+id/bnutrition"
-            android:layout_width="wrap_content"
-            android:layout_height="58dp"
-            android:layout_column="1"
-            android:layout_gravity="fill_horizontal|top"
-            android:layout_row="9"
-            android:text="10. Nutrion/Excretion"
-            android:textColor="#FFFFFF" />
-
-        <Button
             android:id="@+id/bsense"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
+            style="@style/button_text2"
+            android:layout_width="185dp"
+            android:layout_height="63dp"
             android:layout_column="1"
             android:layout_gravity="left|top"
             android:layout_row="10"
+            android:background="@drawable/button"
             android:text="12. Senses/Endocrine"
             android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/breproduction"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="wrap_content"
             android:layout_column="1"
             android:layout_gravity="fill_horizontal|top"
@@ -218,6 +187,8 @@
 
         <Button
             android:id="@+id/bgrowthresponse"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -258,6 +229,8 @@
 
         <Button
             android:id="@+id/bplantrepro"
+            style="@style/button_text2"
+            android:background="@drawable/button"
             android:layout_width="188dp"
             android:layout_column="0"
             android:layout_gravity="left|top"
@@ -267,11 +240,72 @@
 
         <TextView
             android:id="@+id/textView1"
+            style="@style/button_text2"
             android:layout_column="0"
             android:layout_gravity="center"
             android:layout_row="13"
             android:text="Number of Questions:" 
             android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/bcellcontinuity"
+            style="@style/button_text2"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="1"
+            android:background="@drawable/button"
+            android:text="4. Cell Continuity"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/becology"
+            style="@style/button_text2"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:background="@drawable/button"
+            android:text="2. Ecology"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bdna"
+            style="@style/button_text2"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="2"
+            android:background="@drawable/button"
+            android:text="6. DNA/Evolution"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bplantsstructure"
+            style="@style/button_text2"
+            android:layout_width="185dp"
+            android:layout_height="63dp"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="3"
+            android:background="@drawable/button"
+            android:text="8. Plant Structure"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/bnutrition"
+            style="@style/button_text2"
+            android:layout_width="185dp"
+            android:layout_height="64dp"
+            android:layout_column="1"
+            android:layout_gravity="left|bottom"
+            android:layout_row="9"
+            android:background="@drawable/button"
+            android:text="10. Nutrion/Excretion"
+            android:textColor="#FFFFFF" />
 
     </GridLayout>
 
