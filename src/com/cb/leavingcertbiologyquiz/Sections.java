@@ -1,7 +1,10 @@
 package com.cb.leavingcertbiologyquiz;
 
+import java.io.File;
+
 import android.app.Activity;
 import android.app.ActivityOptions;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -68,6 +71,9 @@ public class Sections extends Activity {
 		growthresponse =(Button)findViewById(R.id.bgrowthresponse);
 		
 		group = (RadioGroup)findViewById(R.id.radioGroup2);
+		
+	
+		
 		
 		food.setOnClickListener(new OnClickListener() {
 			@Override
@@ -202,7 +208,7 @@ public class Sections extends Activity {
 		i.putExtra("numberQuestions", numberQuestions);
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
-		
+	
 		
 	}
 	
@@ -211,5 +217,8 @@ public class Sections extends Activity {
 		overridePendingTransition(R.anim.animation, R.anim.animation2);
 	}
 	
-	
+	private static boolean doesDatabaseExist(ContextWrapper context, String dbName) {
+	    File dbFile = context.getDatabasePath(dbName);
+	    return dbFile.exists();
+	}
 }

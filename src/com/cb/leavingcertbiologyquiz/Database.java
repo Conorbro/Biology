@@ -83,6 +83,8 @@ public class Database {
 	
 	static void addQuestions()
 	{
+	
+	ourDatabase.beginTransaction();	
 		
 	//Section (Number of questions)
 		
@@ -1077,6 +1079,8 @@ public class Database {
 	createEntry("What conditions are required for germination to occur?", "All answers are valid", "Water", "Oxygen", "Suitable temperature");
 	
 	//(477) total questions
+	
+	ourDatabase.endTransaction();
 	
 	}
 	

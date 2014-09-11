@@ -36,8 +36,6 @@ public class MainMenu extends Activity {
 //		database = (Button)findViewById(R.id.bdatabase);
 		sectionQuiz = (Button)findViewById(R.id.bsection);
 
-		//Creates the database if it is not already there
-
 		if(doesDatabaseExist(this, Database.DATABASE_NAME)==false){	
 			Database Db = new Database(this);
 			Db.open();
@@ -45,6 +43,9 @@ public class MainMenu extends Activity {
 			Db.close();
 
 		}
+		//Creates the database if it is not already there
+
+
 			
 //		database.setOnClickListener(new OnClickListener(){
 //			
@@ -68,13 +69,13 @@ public class MainMenu extends Activity {
 		
 	}
 	
-	
-	public void openDatabase(){
-		
-		Intent i = new Intent("android.intent.action.SQLITE");
-		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
-		startActivity(i, bndlanimation);	
-	}
+//	
+//	public void openDatabase(){
+//		
+//		Intent i = new Intent("android.intent.action.SQLITE");
+//		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+//		startActivity(i, bndlanimation);	
+//	}
 	
 	public void openSections(){
 		
