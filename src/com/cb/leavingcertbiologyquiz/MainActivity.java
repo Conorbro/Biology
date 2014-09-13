@@ -175,7 +175,6 @@ public class MainActivity extends Activity {
 		boolean duplicate = false, added = false;
 	    int j = 0;
 		
-//	while(added==false){ //While new question has not been added loop through questions checking for duplicate
 	    for(j=0; j<currentQuestion; j++){
 	    	
 	    	if(questions[j]==x){ //If duplicate found, generate new x, leave for loop, start over
@@ -186,15 +185,10 @@ public class MainActivity extends Activity {
 	    	
 	    }
 		
-	 //   if(duplicate==false){ //If no duplicate, add to array and exit loop
 	    	
 	    	added = addToArray(x,currentQuestion-1);
 	    	
-	//    }
-	    
-	   
-	    
-	//}
+
 
 		
 		Database Dbb = new Database(this);
@@ -265,6 +259,7 @@ public class MainActivity extends Activity {
 		i.putExtra("total", numberQuestions);
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
+//		startActivity(i);
 		finish();
 		
 	}

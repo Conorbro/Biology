@@ -1,11 +1,9 @@
 package com.cb.leavingcertbiologyquiz;
 
-import java.io.File;
 import com.cb.leavingcertbiologyquiz.R;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
-import android.content.ContextWrapper;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.SoundPool;
@@ -17,7 +15,6 @@ import android.widget.Button;
 public class MainMenu extends Activity {
 
 	
-//	private Button database;
 	private Button sectionQuiz;
 
 	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
@@ -33,29 +30,9 @@ public class MainMenu extends Activity {
 	
 	public void init(){
 		final int soundId = sp.load(this, R.raw.click, 1); 
-//		database = (Button)findViewById(R.id.bdatabase);
 		sectionQuiz = (Button)findViewById(R.id.bsection);
 
-		if(doesDatabaseExist(this, Database.DATABASE_NAME)==false){	
-			Database Db = new Database(this);
-			Db.open();
-			Database.addQuestions();
-			Db.close();
 
-		}
-		//Creates the database if it is not already there
-
-
-			
-//		database.setOnClickListener(new OnClickListener(){
-//			
-//			
-//			public void onClick(View v){
-//				sp.play(soundId, 1, 1, 0, 0, 1);
-//				openDatabase();
-//				
-//		}});
-		
 		
 		sectionQuiz.setOnClickListener(new OnClickListener(){
 
@@ -69,24 +46,15 @@ public class MainMenu extends Activity {
 		
 	}
 	
-//	
-//	public void openDatabase(){
-//		
-//		Intent i = new Intent("android.intent.action.SQLITE");
-//		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
-//		startActivity(i, bndlanimation);	
-//	}
+
 	
 	public void openSections(){
 		
 		Intent i = new Intent("android.intent.action.SECTIONS");
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
+//		startActivity(i);
 	}
 	
-	private static boolean doesDatabaseExist(ContextWrapper context, String dbName) {
-	    File dbFile = context.getDatabasePath(dbName);
-	    return dbFile.exists();
-	}
-	
+
 }

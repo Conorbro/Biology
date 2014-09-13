@@ -72,6 +72,23 @@ public class Sections extends Activity {
 		
 		group = (RadioGroup)findViewById(R.id.radioGroup2);
 		
+		if(doesDatabaseExist(this, Database.DATABASE_NAME)==false){	
+			
+			System.out.println("MAKING DATABASE");
+			
+			Database Db = new Database(this);
+			Db.open();
+			Db.addQuestions();
+			
+			Db.close();
+
+		}
+		
+		else{
+			
+			System.out.println("DATABASE Exists apparently");
+			
+		}
 	
 		
 		
@@ -208,7 +225,7 @@ public class Sections extends Activity {
 		i.putExtra("numberQuestions", numberQuestions);
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
-	
+//		startActivity(i);
 		
 	}
 	
