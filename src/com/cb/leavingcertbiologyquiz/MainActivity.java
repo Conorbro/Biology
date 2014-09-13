@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 	public ImageView imageView, faceView;
 	public Drawable image, faceImage;
 	public int[] questions;
-	
+	public boolean isCorrect;
 	
 	public int images[] = {			
 		R.drawable.ecology,
@@ -68,6 +68,7 @@ public class MainActivity extends Activity {
 		questions = new int[16];
 		score = 0;
 		x = 0;
+		isCorrect = false;
 		questionNum = 0;
 		currentQuestion = 0;
 		questionButton = (Button)findViewById(R.id.bheart);
@@ -125,14 +126,14 @@ public class MainActivity extends Activity {
 	answer=(RadioButton)findViewById(group.getCheckedRadioButtonId());
 	
 		if(answer.getText().toString()==returnedAnswer){	//Check if given answer is correct 
-			
+			isCorrect = true;
 			score++;
-			answerView.setText("The last question was answered Correctly"); //returns feedback of correctly answered question
+			answerView.setText("The last question was answered correctly"); //returns feedback of correctly answered question
 			faceImage = getResources().getDrawable(R.drawable.face1);		//Setting the image view
 			faceView.setImageDrawable(faceImage);		}
 		
 		else{	//returns feedback on wrongly answered question
-			
+			isCorrect = false;
 			answerView.setText("The last question was answered incorrectly " + "\n" + "Correct answer was: " +  returnedAnswer);
 			faceImage = getResources().getDrawable(R.drawable.face3);
 			faceView.setImageDrawable(faceImage);
@@ -257,6 +258,8 @@ public class MainActivity extends Activity {
 		Intent i = new Intent(getApplicationContext(), Results.class);
 		i.putExtra("Score", score);
 		i.putExtra("total", numberQuestions);
+		i.putExtra("correct", isCorrect);
+		i.putExtra("answer", returnedAnswer);
 		Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
 		startActivity(i, bndlanimation);
 //		startActivity(i);

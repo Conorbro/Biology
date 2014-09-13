@@ -59,4 +59,14 @@
         android:text="Main Menu"
         android:textColor="#FFFFFF" />
 
+    <TextView
+        android:id="@+id/tvanswer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bmainmenu"
+        android:layout_below="@+id/bmainmenu"
+        android:layout_marginTop="17dp"
+        android:text="Answer Text View "
+        android:textColor="#FFFFFF" />
+
 </RelativeLayout>

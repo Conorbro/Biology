@@ -16,7 +16,7 @@ import com.cb.leavingcertbiologyquiz.R;
 
 public class Results extends Activity{
 	
-	private TextView score_display;
+	private TextView score_display, answer_display;
 	private int value = -1;
 	private int percentage;
 	private int total;
@@ -24,7 +24,8 @@ public class Results extends Activity{
 	private ImageView faceView;
 	private Drawable face;
 	private Button new_quiz, main_menu;
-	
+	private boolean isCorrect;
+	private String answer;
 	SoundPool sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 
 	private int images[] = {			
@@ -43,6 +44,9 @@ public class Results extends Activity{
 
 		Intent nIntent = getIntent();
 		total = nIntent.getIntExtra("total", 1);
+		isCorrect = nIntent.getBooleanExtra("correct", false);
+		answer = nIntent.getStringExtra("answer");
+		
 		init();
 		showScore();
 		
@@ -54,6 +58,8 @@ public class Results extends Activity{
 		main_menu = (Button)findViewById(R.id.bmainmenu);
 		score_display = (TextView)findViewById(R.id.tvscore);
 		faceView = (ImageView)findViewById(R.id.ivface2);	
+		answer_display = (TextView)findViewById(R.id.tvanswer2);
+		answer_display.setText(" ");
 		final int soundId = sp.load(this, R.raw.click, 1); 
 
 		new_quiz.setOnClickListener(new OnClickListener() {
@@ -121,7 +127,16 @@ public class Results extends Activity{
 		
 		faceView.setImageDrawable(face);
 		
+		if(isCorrect==true){
 		
+		answer_display.setText("The last question was answered correctly");
+		}
+		
+		else{
+			
+			answer_display.setText("The last question was answered incorrectly " + "\n" + "Correct answer was: " +  answer);
+			
+		}
 	}
 	
 	public void newQuiz(){
